@@ -1,0 +1,17 @@
+2019-06-27 12:11:13,759 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:12:58,220 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:14:35,147 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:16:20,074 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:18:10,192 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:19:45,223 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:21:19,696 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:23:29,699 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:25:12,770 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:27:51,750 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-06-27 12:28:43,040 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdValidateAddCartTwoError
+2019-06-27 12:28:43,042 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdValidateAddCartTwoError
+2019-06-27 12:28:43,765 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdValidateAddCartTwoError
+2019-06-27 12:28:43,914 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdValidateAddCartTwoError
+2019-06-27 12:28:43,965 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdValidateAddCartTwoError
+2019-06-27 12:28:43,965 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdValidateAddCartTwoError
+2019-06-27 12:30:42,280 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed

@@ -1,0 +1,11 @@
+2019-06-25 16:34:44,105 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:37:12,332 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:39:09,363 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:41:45,782 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:43:42,414 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:45:33,127 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:47:41,555 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:49:34,778 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:51:28,420 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 16:56:30,869 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:passed
+2019-06-25 17:02:39,938 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTest~chrome:failed

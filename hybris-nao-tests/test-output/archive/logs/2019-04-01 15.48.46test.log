@@ -1,0 +1,22 @@
+2019-04-01 15:40:37,945 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-01 15:40:37,948 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-01 15:40:39,553 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-01 15:40:39,663 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-01 15:40:39,668 INFO  [com.doosan.nao.reports.ReportGenerator] in is null
+2019-04-01 15:40:39,668 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-01 15:45:20,686 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-01 15:45:20,688 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-01 15:45:21,310 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-01 15:45:21,419 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-01 15:45:21,462 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-01 15:45:21,462 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-01 15:46:10,230 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 15:46:52,858 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 15:47:35,069 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 15:48:04,651 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-01 15:48:04,652 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-01 15:48:05,274 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-01 15:48:05,404 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-01 15:48:05,473 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-01 15:48:05,473 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-01 15:48:46,765 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed

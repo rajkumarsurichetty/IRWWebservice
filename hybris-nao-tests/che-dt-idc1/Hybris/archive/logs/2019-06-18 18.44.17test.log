@@ -1,0 +1,8 @@
+2019-06-18 11:58:38,197 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEnterValues~chrome:passed
+2019-06-18 18:42:40,375 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdVerifyEnterValues
+2019-06-18 18:42:40,376 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdVerifyEnterValues
+2019-06-18 18:42:40,999 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdVerifyEnterValues
+2019-06-18 18:42:41,124 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdVerifyEnterValues
+2019-06-18 18:42:41,165 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdVerifyEnterValues
+2019-06-18 18:42:41,165 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdVerifyEnterValues
+2019-06-18 18:44:17,646 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEnterValues~chrome:failed

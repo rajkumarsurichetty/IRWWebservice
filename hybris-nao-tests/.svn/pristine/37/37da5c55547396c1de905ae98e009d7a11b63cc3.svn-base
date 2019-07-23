@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true"
+	name="Hybris and Fleetmanagement automation Test">
+	<test group-by-instances="true" preserve-order="true"
+		name="Test Class TestFleetManagement">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<parameter name="userName" value="rajkumars" />
+		<parameter name="password" value="Welcome2" />
+		<parameter name="brand" value="Bobcat" />
+		<parameter name="custNo" value="1225672" />
+		<parameter name="iotUSer1" value="p.mahendran@doosan.com"></parameter>
+		<parameter name="iotPassword1" value="Welcome@8"></parameter>
+		<parameter name="iotUSer" value="rajkumar.s1@doosan.com"></parameter>
+		<parameter name="iotPassword" value="Welcome@3"></parameter>
+		<classes>
+			 <class name="com.doosan.nao.fleetManagements.test.TestFleetManagement"/>
+
+		</classes>
+	</test> <!-- Default test -->
+	<test group-by-instances="true" preserve-order="true"
+		name="Test Class AdminAddNew Comment" >
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<parameter name="userName" value="rajkumars" />
+		<parameter name="password" value="Welcome2" />
+		<parameter name="brand" value="Bobcat" />
+		<parameter name="custNo" value="1225672" />
+		<parameter name="custNo2" value="1225589" />
+		<parameter name="iotUSer1" value="p.mahendran@doosan.com"></parameter>
+		<parameter name="iotPassword1" value="Welcome@8"></parameter>
+		<parameter name="iotUSer" value="rajkumar.s1@doosan.com"></parameter>
+		<parameter name="iotPassword" value="Welcome@3"></parameter>
+		<classes>
+			 <class name="com.doosan.nao.fleetManagements.test.TestAddcommentDifferentDealers"/>
+
+		</classes>
+	</test> <!-- Default test -->
+	<test group-by-instances="true" preserve-order="true"
+		name="Test Class ServiceTab and service Log Tab">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<parameter name="userName" value="rajkumars" />
+		<parameter name="password" value="Welcome2" />
+		<parameter name="brand" value="Bobcat" />
+		<parameter name="custNo" value="1225672" />
+		<parameter name="iotUSer1" value="p.mahendran@doosan.com"></parameter>
+		<parameter name="iotPassword1" value="Welcome@8"></parameter>
+		<parameter name="iotUSer" value="rajkumar.s1@doosan.com"></parameter>
+		<parameter name="iotPassword" value="Welcome@3"></parameter>
+		<classes>
+			 <class name="com.doosan.nao.fleetManagements.test.ServiceTabTest"/>
+
+		</classes>
+	</test> <!-- Default test -->
+	<test group-by-instances="true" preserve-order="true"
+		name="Test Class ServiceTab">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<parameter name="userName" value="rajkumars" />
+		<parameter name="password" value="Welcome2" />
+		<parameter name="brand" value="Bobcat" />
+		<parameter name="custNo" value="1225672" />
+		<parameter name="iotUSer1" value="p.mahendran@doosan.com"></parameter>
+		<parameter name="iotPassword1" value="Welcome@8"></parameter>
+		<parameter name="iotUSer" value="rajkumar.s1@doosan.com"></parameter>
+		<parameter name="iotPassword" value="Welcome@3"></parameter>
+		<classes>
+			 <class name="com.doosan.nao.fleetManagements.test.FaultCodesTest"/>
+
+		</classes>
+	</test> <!-- Default test -->
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.QuickOrderPageInvalidTest for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.QuickOrderPageInvalidTest" />
+		</classes>
+	</test> <!-- Default test -->
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.ShoppingCartPageInvalidTest for firefox"
+		enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.ShoppingCartPageInvalidTest" />
+		</classes>
+	</test> <!-- Default test -->
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.ShippingAddressPageInvalidTest for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.ShippingAddressPageInvalidTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.AllMakesTest for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.AllMakesTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.pageFactoryHomePages.HomePageValidator for firefox"
+		enabled="false">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.pageFactoryHomePages.HomePageValidator" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.ClassOrderValidator for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.ClassOrderValidator" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.ClassOneOrderValidator for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.ClassOneOrderValidator" />
+		</classes>
+	</test> <!-- Default test -->
+
+
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="LoadTestandperformanceTest_Class48HoursOrderValidator" enabled="false">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.Class48HoursOrderValidator" />
+		</classes>
+	</test> <!-- Default test -->
+
+
+
+
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.ClassTwoOrderValidator for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.ClassTwoOrderValidator" />
+		</classes>
+	</test> <!-- Default test -->
+
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.ClassThreeOrderValidator for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.ClassThreeOrderValidator" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.ClassFourOrderValidator for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class
+				name="com.doosan.nao.pagfactory.classOrderTest.ClassFourOrderValidator" />
+		</classes>
+	</test> <!-- Default test -->
+
+
+<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="com.doosan.nao.pagfactory.classOrderTest.SurplusReturnsPageValidation for firefox">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.SurplusReturnsPageValidation"/>
+		</classes>
+	</test> <!-- Default test -->
+
+
+
+
+
+</suite> <!-- Default suite -->
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true"  name="Test suite For Order Test">
+		
+
+		
+		<test verbose="2" group-by-instances="true" preserve-order="true" name="com.doosan.nao.pagfactory.classOrderTest.Class48HoursOrderValidator for firefox9" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.Class48HoursOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+							
+</suite> <!-- Default suite -->
+
+

@@ -1,0 +1,2 @@
+2019-07-04 18:22:03,707 INFO  [com.doosan.nao.reports.ReportGenerator] testValidateFleetmanagementTabs~chrome:failed
+2019-07-04 18:25:19,086 INFO  [com.doosan.nao.reports.ReportGenerator] testValidateEquipmentsInGrid~chrome:passed

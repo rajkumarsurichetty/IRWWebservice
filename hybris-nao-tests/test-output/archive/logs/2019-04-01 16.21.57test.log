@@ -1,0 +1,20 @@
+2019-04-01 15:49:26,013 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-01 15:50:02,996 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 15:50:42,450 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-01 15:56:20,325 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:01:56,155 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:02:37,796 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:03:19,983 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:04:00,489 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:04:42,324 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-01 16:05:20,166 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-01 16:05:56,617 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:06:32,236 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:12:08,062 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-01 16:21:17,458 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-01 16:21:17,460 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-01 16:21:18,072 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-01 16:21:18,194 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-01 16:21:18,241 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-01 16:21:18,242 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-01 16:21:57,821 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed

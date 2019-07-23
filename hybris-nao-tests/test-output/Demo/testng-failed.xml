@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Demo]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="BatchOrderUploadTest(failed)">
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="33.1.1"/>
+    <parameter name="platform" value="Windows"/>
+    <classes>
+      <class name="com.doosan.nao.test.BatchOrderUploadTest">
+        <methods>
+          <include name="bathcOrderUploadTest"/>
+          <include name="initializebathcOrderUploadTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.doosan.nao.test.BatchOrderUploadTest -->
+    </classes>
+  </test> <!-- BatchOrderUploadTest(failed) -->
+</suite> <!-- Failed suite [Demo] -->

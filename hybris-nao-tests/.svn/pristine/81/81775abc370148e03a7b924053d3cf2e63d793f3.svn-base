@@ -1,0 +1,442 @@
+package com.doosan.nao.PageFactory;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class HomePage {
+
+
+
+
+
+	
+
+	@FindBy(how=How.LINK_TEXT,using="Batch Order Upload")
+	public WebElement BatchOrderUpload;
+
+	@FindBy(how=How.LINK_TEXT,using="Order History")
+	public WebElement OrderHistory;
+	
+	@FindBy(how=How.LINK_TEXT,using="Sign Out")
+	public WebElement SignOut;    
+    
+
+	@FindBy(how=How.LINK_TEXT,using="All Makes")
+	public WebElement AllMakes;
+    public void clickAllMakes(EventFiringWebDriver wd)
+    {
+
+
+    	WebDriverWait waitForHomeLink=new WebDriverWait(wd, 5);
+    	waitForHomeLink.until(ExpectedConditions.elementToBeClickable(AllMakes));
+    	//AllMakes.click();
+		//if(allMakes.size()==1)
+    	//{
+    		//Assert.assertSame(1, 2, "All makes duplicate links are present in home page");
+    	//}
+    	//else 
+    	//{
+    	//	Assert.assertSame(1, allMakes.size(), "All makes duplicate links are present in home page");
+    	//}
+    }
+
+    
+    
+    
+	@FindBy(how=How.LINK_TEXT,using="Home")
+	public WebElement HomeLink;
+    public void clickHomeLink(EventFiringWebDriver wd)
+    {
+    	WebDriverWait waitForHomeLink=new WebDriverWait(wd, 5);
+    	waitForHomeLink.until(ExpectedConditions.elementToBeClickable(HomeLink));
+    	HomeLink.click();
+    }
+
+	@FindBy(how=How.LINK_TEXT,using="Saved Carts")
+	public WebElement SavedCarts;
+    public void clickSavedCartsLink()
+    {
+    	SavedCarts.click();
+    }
+
+	@FindBy(how=How.LINK_TEXT,using="Price & Availability")
+	public WebElement PriceAndAvaliablity;
+    public void PriceAndAvaliablityLink()
+    {
+    	PriceAndAvaliablity.click();
+    }
+
+    
+    @FindBy(how=How.LINK_TEXT,using="Quick Order")
+	public WebElement QuickOrder;
+    public void clickQuickOrderLink(EventFiringWebDriver wd)
+    {
+    	WebDriverWait wait=new WebDriverWait(wd, 10);
+    	wait.until(ExpectedConditions.elementToBeClickable(QuickOrder));
+    	QuickOrder.click();
+    }
+    
+    public void clickBatchOrderUploadLink()
+    {
+    	BatchOrderUpload.click();
+    }
+    
+    public void clickOrderHistoryLink()
+    {
+    	OrderHistory.click();
+    }
+
+    public void clickSignOutLink()
+    {
+    	SignOut.click();
+    }
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Change")
+	public WebElement change;
+    public void clickChange()
+    {
+    	System.err.println("A");
+    	try {
+    		System.err.println("B");
+    	change.click();
+    	System.err.println("C");
+    	} catch (Throwable t)
+    	{
+    		System.err.println("D");
+    	}
+    }
+
+    
+    
+    //Hyper links
+    
+    @FindBy(how=How.LINK_TEXT,using="All Makes")
+	public WebElement allMakes;
+    public void clickAllMakesLink()
+    {
+    	allMakes.click();
+    }
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/div/h1")
+	public WebElement allMakesText;
+    public void verifyAllMakesText()
+    {
+    	String actualText=allMakesText.getText();
+    	String expectedText="All Makes";
+    	Assert.assertEquals(actualText, expectedText);
+    }
+     
+    
+    
+    
+    
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Check Price & Availability")
+	public WebElement checkPriceAndAvailability;
+    public void clickcheckPriceAndAvailabilityLink()
+    {
+    	System.err.println("check price");
+    	checkPriceAndAvailability.click();
+    }
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/div/h1")
+	public WebElement checkPriceAndAvailabilityText;
+    public void verifyCheckPriceAndAvailabilityText()
+    {
+    	String actualText=checkPriceAndAvailabilityText.getText();
+    	String expectedText="Check Price & Availability";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+        
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Upload an Excel parts list")
+	public WebElement uploadAnExcelPartsList;
+    public void clickuploadAnExcelPartsListLink()
+    {
+    	uploadAnExcelPartsList.click();
+    }
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div/div/h1")
+	public WebElement uploadAnExcelPartsListText;
+    public void verifyUploadAnExcelPartsListText()
+    {
+    	String actualText=uploadAnExcelPartsListText.getText();
+    	String expectedText="Batch Order Upload";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Create a New Order")
+	public WebElement createNewOrder;
+    public void clickCreateNewOrderLink()
+    {
+    	createNewOrder.click();
+    }
+    
+    @FindBy(how=How.XPATH,using=".//*[@id='main']/div[1]/div/div/h1")
+	public WebElement quickOrderText;
+    public void verifyQuickOrderText()
+    {
+    	String actualText=quickOrderText.getText().trim();
+    	String expectedText="	Quick Order".trim();
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+    
+    //GPES
+    //Import GPES Order
+    
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Create a New Order")
+	public WebElement CreateANewOrder;
+    public void clickCreateANewOrderLink()
+    {
+    	CreateANewOrder.click();
+    }
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/div/h1")
+	public WebElement CreateANewOrderText;
+    public void verifycreateANewOrderText()
+    {
+    	String actualText=CreateANewOrderText.getText();
+    	String expectedText="Quick Order";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+
+    @FindBy(how=How.LINK_TEXT,using="View saved shopping carts")
+	public WebElement viewSavedShoppingCarts;
+    public void clickviewSavedShoppingCartsLink()
+    {
+    	viewSavedShoppingCarts.click();
+    }
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/div/h1")
+	public WebElement viewSavedShoppingCartsText;
+    public void verifyViewSavedShoppingCartsText()
+    {
+    	String actualText=viewSavedShoppingCartsText.getText();
+    	String expectedText="Saved Carts";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+  //
+    //Import GPES Order
+    
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Import GPES Order")
+	public WebElement ImportGPESOrder;
+    public void clickImportGPESOrderLink()
+    {
+    	ImportGPESOrder.click();
+    }
+    
+    @FindBy(how=How.XPATH,using="html/body/div[5]/div[1]/span")
+	public WebElement ImportGPESOrderText;
+    public void verifyImportGPESOrderText(EventFiringWebDriver wd)
+    {
+    	String actualText=ImportGPESOrderText.getText();
+    	String expectedText="GPES Order Lookup";
+    	
+    	Actions ac=new Actions(wd);
+    	ac.sendKeys(Keys.ESCAPE).build().perform();
+    	Assert.assertEquals(actualText, expectedText);
+    	
+    }
+
+    /***************Links ********************/
+    
+    @FindBy(how=How.LINK_TEXT,using="Search Invoices")
+	public WebElement SearchInvoices;
+    public void clickSearchInvoicesLink()
+    {
+    	SearchInvoices.click();
+    }
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Search Orders")
+	public WebElement SearchOrders;
+    public void clickSearchOrdersLink()
+    {
+    	SearchOrders.click();
+    }
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Search Shipments")
+	public WebElement SearchShipments;
+    public void clickSearchShipmentsLink()
+    {
+    	SearchShipments.click();
+    }
+    
+    @FindBy(how=How.LINK_TEXT,using="Create a New Parts Claim")
+	public WebElement CreateANewPartsClaim;
+    public void clickCreateANewPartsClaimLink()
+    {
+    	CreateANewPartsClaim.click();
+    }
+
+    @FindBy(how=How.LINK_TEXT,using="My Open Parts Claims")
+	public WebElement MyOpenPartsClaims;
+    public void clickMyOpenPartsClaimsLink()
+    {
+    	MyOpenPartsClaims.click();
+    }
+    
+    @FindBy(how=How.LINK_TEXT,using="Search Claim History")
+	public WebElement SearchClaimHistory;
+    public void clickSearchClaimHistoryLink()
+    {
+    	SearchClaimHistory.click();
+    }
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Access Parts Reporting")
+	public WebElement AccessPartsReporting;
+    public void clickAccessPartsReportingLink()
+    {
+    	AccessPartsReporting.click();
+    }
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="How To Contact Us")
+	public WebElement HowToContactUs;
+    public void clickHowToContactUsLink()
+    {
+    	HowToContactUs.click();
+    }
+    
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="Training Materials")
+	public WebElement TrainingMaterials;
+    public void clickTrainingMaterialsLink()
+    {
+    	TrainingMaterials.click();
+    }
+    
+    
+    @FindBy(how=How.LINK_TEXT,using="DealerNET")
+	public WebElement DealerNET;
+    public void clickDealerNETLink()
+    {
+    	DealerNET.click();
+    }
+    
+    @FindBy(how=How.LINK_TEXT,using="DoosanStockCalendar")
+	public WebElement DoosanStockCalendar;
+    public void clickDoosanStockCalendarLink()
+    {
+    	DoosanStockCalendar.click();
+    }
+    
+
+    /*****************************Text verification ****************/
+    
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div/div[1]/div/h1")
+	public WebElement SearchInvoiceText;
+    public void verifySearchInvoiceText()
+    {
+    	String actualText=SearchInvoiceText.getText();
+    	String expectedText="Account History";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div/div[1]/div/h1")
+	public WebElement SearchOrderText;
+    public void verifySearchOrderText()
+    {
+    	String actualText=SearchOrderText.getText();
+    	String expectedText="Account History";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div/div[1]/div/h1")
+	public WebElement SearchShipmentsText;
+    public void verifySearchShipmentsText()
+    {
+    	String actualText=SearchShipmentsText.getText();
+    	String expectedText="Account History";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/div/h1")
+	public WebElement CreateNewPartClaimText;
+    public void verifyCreateNewPartClaimText()
+    {
+    	String actualText=CreateNewPartClaimText.getText();
+    	String expectedText="Parts Claims";
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/div/h1")
+	public WebElement MyOpenPartsClaimText;
+    public void verifyMyOpenPartsClaimText()
+    {
+    	String actualText=MyOpenPartsClaimText.getText();
+    	String expectedText="Parts Claims";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/div/h1")
+	public WebElement SearchClaimHistoryText;
+    public void verifySearchClaimHistoryText()
+    {
+    	String actualText=SearchClaimHistoryText.getText();
+    	String expectedText="Parts Claims";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/h1")
+	public WebElement AccessPartsReportingText;
+    public void verifyAccessPartsReportingText()
+    {
+    	String actualText=AccessPartsReportingText.getText();
+    	String expectedText="	Reporting";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+    @FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[1]/div/span/h1")
+	public WebElement DefaultShipmentMethodsText;
+    public void verifyDefaultShipmentMethodsText()
+    {
+    	String actualText=DefaultShipmentMethodsText.getText();
+    	String expectedText="Assign Default Shipment Method";
+    	
+    	Assert.assertEquals(actualText, expectedText);
+    }
+    
+    
+   
+}

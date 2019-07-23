@@ -1,0 +1,16 @@
+2019-07-02 14:19:56,655 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed
+2019-07-02 14:21:52,181 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed
+2019-07-02 14:23:42,221 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed
+2019-07-02 14:58:07,802 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdValAddMoreLines
+2019-07-02 14:58:07,802 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdValAddMoreLines
+2019-07-02 14:58:08,500 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdValAddMoreLines
+2019-07-02 14:58:08,616 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdValAddMoreLines
+2019-07-02 14:58:08,653 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdValAddMoreLines
+2019-07-02 14:58:08,653 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdValAddMoreLines
+2019-07-02 15:04:33,986 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdValAddMoreLines
+2019-07-02 15:04:33,987 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdValAddMoreLines
+2019-07-02 15:04:34,664 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdValAddMoreLines
+2019-07-02 15:04:34,774 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdValAddMoreLines
+2019-07-02 15:04:34,809 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdValAddMoreLines
+2019-07-02 15:04:34,809 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdValAddMoreLines
+2019-07-02 15:06:01,430 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValAddMoreLines~chrome:passed

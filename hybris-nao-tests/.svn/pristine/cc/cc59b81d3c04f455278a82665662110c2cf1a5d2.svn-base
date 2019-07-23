@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite For TestingClass Orders1 default]" parallel="tests">
+  <parameter name="platform" value="Windows"/>
+  <parameter name="osVersion" value="7"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="30.0"/>
+  <test name="com.doosan.nao.classOrderTest.ClassOneOrderValidator for firefox1(failed)" parallel="tests">
+    <parameter name="platform" value="Windows"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="30.0"/>
+    <classes>
+      <class name="com.doosan.nao.classOrderTest.ClassTwoOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClassTwoOrderValidatorTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassTwoOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassThreeOrderValidator">
+        <methods>
+          <include name="setUpForClassThreeOrderValidatorTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassThreeOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassZeroOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClassZeroOrderTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassZeroOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.Class48HoursOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClass48HoursOrderValidatorTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.Class48HoursOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassFourOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClassFourOrderValidatorTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassFourOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassOneOrderValidator">
+        <methods>
+          <include name="setUpForClassOneOrderTest"/>
+          <include name="ValidateClassOneOrderTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassOneOrderValidator -->
+    </classes>
+  </test> <!-- com.doosan.nao.classOrderTest.ClassOneOrderValidator for firefox1(failed) -->
+  <test name="com.doosan.nao.classOrderTest.ClassTwoOrderValidator for firefox1(failed)" parallel="tests">
+    <parameter name="platform" value="Windows"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="30.0"/>
+    <classes>
+      <class name="com.doosan.nao.classOrderTest.ClassTwoOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClassTwoOrderValidatorTest"/>
+          <include name="ValidateClassTwoOrderValidatorTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassTwoOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassThreeOrderValidator">
+        <methods>
+          <include name="setUpForClassThreeOrderValidatorTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassThreeOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassZeroOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClassZeroOrderTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassZeroOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.Class48HoursOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClass48HoursOrderValidatorTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.Class48HoursOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassFourOrderValidator">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpForClassFourOrderValidatorTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassFourOrderValidator -->
+      <class name="com.doosan.nao.classOrderTest.ClassOneOrderValidator">
+        <methods>
+          <include name="setUpForClassOneOrderTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassOneOrderValidator -->
+    </classes>
+  </test> <!-- com.doosan.nao.classOrderTest.ClassTwoOrderValidator for firefox1(failed) -->
+</suite> <!-- Failed suite [Suite For TestingClass Orders1 default] -->

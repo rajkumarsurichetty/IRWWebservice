@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	
+		<test verbose="2" name="LoginTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.LoginTest" />
+		</classes>
+	</test> <!-- Default test -->
+	
+	
+	<test verbose="2" name="CheckOutTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.CheckOutTest" />
+		</classes>
+	
+</test> <!-- Default test -->
+
+	<test verbose="2" name="HyperLinkTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.HyperLinkTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" name="BatchOrderUploadTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.BatchOrderUploadTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+
+
+
+	<test verbose="2" name="DropDownTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.DropDownTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" name="OrganizationSorterTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.OrganizationSorterTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" name="PaginationTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.PaginationTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+
+
+
+	<test verbose="2" name="QuickOrderTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.QuickOrderTest" />
+		</classes>
+	</test> <!-- Default test -->
+
+	<test verbose="2" name="QuickOrderExportFileTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="33.1.1" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.test.QuickOrderExportFileTest" />
+		</classes>
+	</test>
+
+
+</suite> <!-- Default suite -->
+
+
+     
+           
+                       

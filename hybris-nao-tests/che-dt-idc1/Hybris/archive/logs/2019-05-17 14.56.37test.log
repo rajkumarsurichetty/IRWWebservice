@@ -1,0 +1,8 @@
+2019-05-17 13:48:54,476 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgIsOptionDisabledTest~chrome:failed
+2019-05-17 14:55:52,527 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgIsOptionDisabledTest
+2019-05-17 14:55:52,529 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgIsOptionDisabledTest
+2019-05-17 14:55:53,138 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgIsOptionDisabledTest
+2019-05-17 14:55:53,259 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgIsOptionDisabledTest
+2019-05-17 14:55:53,286 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgIsOptionDisabledTest
+2019-05-17 14:55:53,287 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgIsOptionDisabledTest
+2019-05-17 14:56:37,002 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgIsOptionDisabledTest~chrome:passed

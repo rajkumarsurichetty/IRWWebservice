@@ -1,0 +1,131 @@
+2019-04-10 17:55:51,778 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:22:56,513 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-16 19:22:56,515 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-16 19:22:57,831 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-16 19:22:57,997 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-16 19:22:58,090 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-16 19:22:58,091 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-16 19:23:39,207 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:24:00,807 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-16 19:24:40,782 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:25:02,107 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-16 19:25:40,639 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:26:01,940 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-16 19:26:40,325 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:27:02,069 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-16 19:27:02,072 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-16 19:27:03,053 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-16 19:27:03,222 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-16 19:27:03,313 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-16 19:27:03,313 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-16 19:27:43,225 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:27:57,284 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-16 19:27:57,285 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-16 19:27:58,204 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-16 19:27:58,472 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-16 19:27:58,551 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-16 19:27:58,551 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-16 19:28:04,587 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-16 19:28:35,707 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:28:45,740 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:28:57,051 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-16 19:28:57,085 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-16 19:29:36,937 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:30:07,502 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-16 19:30:07,504 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-16 19:30:08,325 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-16 19:30:08,515 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-16 19:30:08,599 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-16 19:30:08,600 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-16 19:30:46,106 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-16 19:31:07,468 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 16:13:35,379 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-17 16:13:35,380 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-17 16:13:35,986 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-17 16:13:36,101 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-17 16:13:36,137 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-17 16:13:36,137 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-17 16:14:20,348 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 16:14:42,060 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 16:47:01,101 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-17 16:47:01,102 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-17 16:47:01,656 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-17 16:47:01,753 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-17 16:47:01,792 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-17 16:47:01,808 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-17 16:47:40,967 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 16:48:02,521 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 16:48:43,254 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 16:49:04,692 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 16:51:22,698 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-17 16:51:22,700 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-17 16:51:23,278 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-17 16:51:23,390 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-17 16:51:23,464 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-17 16:51:23,464 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-17 16:52:02,131 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 16:52:23,615 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 16:53:05,529 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 16:53:26,958 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 16:54:06,885 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 16:54:28,280 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 16:55:07,784 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 17:17:30,697 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgExistenceTwoDropDown
+2019-04-17 17:17:30,698 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgExistenceTwoDropDown
+2019-04-17 17:17:31,263 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgExistenceTwoDropDown
+2019-04-17 17:17:31,368 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgExistenceTwoDropDown
+2019-04-17 17:17:31,427 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgExistenceTwoDropDown
+2019-04-17 17:17:31,427 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgExistenceTwoDropDown
+2019-04-17 17:18:08,884 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-04-17 17:18:30,546 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 17:19:08,519 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-04-17 17:21:14,637 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-17 17:21:14,638 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-17 17:21:15,191 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-17 17:21:15,290 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-17 17:21:15,353 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-17 17:21:15,353 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-17 17:21:57,484 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 17:22:18,997 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 17:22:57,206 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 17:23:18,650 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 17:23:34,183 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgExistenceTwoDropDown
+2019-04-17 17:23:34,184 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgExistenceTwoDropDown
+2019-04-17 17:23:34,542 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgExistenceTwoDropDown
+2019-04-17 17:23:34,635 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgExistenceTwoDropDown
+2019-04-17 17:23:34,686 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgExistenceTwoDropDown
+2019-04-17 17:23:34,686 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgExistenceTwoDropDown
+2019-04-17 17:24:09,380 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-04-17 17:24:30,931 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 17:25:08,441 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-04-17 17:25:29,903 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 17:26:06,011 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-04-17 17:26:27,358 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 18:28:38,967 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-17 18:28:38,968 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-17 18:29:32,282 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-04-17 18:29:32,283 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-04-17 18:29:33,009 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-04-17 18:29:33,174 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-04-17 18:29:33,243 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-04-17 18:29:33,244 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-04-17 18:30:12,060 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 18:30:33,478 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 18:31:13,785 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 18:31:35,074 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 18:32:12,776 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 18:32:34,127 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 18:33:12,029 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 18:33:33,384 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 18:34:10,776 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-04-17 18:34:32,097 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 18:34:52,494 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:failed
+2019-04-17 18:34:56,693 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgExistenceTwoDropDown
+2019-04-17 18:34:56,694 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgExistenceTwoDropDown
+2019-04-17 18:34:56,819 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgExistenceTwoDropDown
+2019-04-17 18:34:57,098 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgExistenceTwoDropDown
+2019-04-17 18:34:57,201 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgExistenceTwoDropDown
+2019-04-17 18:34:57,201 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgExistenceTwoDropDown
+2019-04-17 18:35:31,428 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-04-17 18:35:52,765 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-04-17 18:36:30,202 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed

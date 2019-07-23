@@ -1,0 +1,7 @@
+2019-07-02 14:06:35,877 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdInvTextAddLineBox
+2019-07-02 14:06:35,877 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdInvTextAddLineBox
+2019-07-02 14:06:36,634 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdInvTextAddLineBox
+2019-07-02 14:06:36,731 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdInvTextAddLineBox
+2019-07-02 14:06:36,770 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdInvTextAddLineBox
+2019-07-02 14:06:36,770 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdInvTextAddLineBox
+2019-07-02 14:08:06,215 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed

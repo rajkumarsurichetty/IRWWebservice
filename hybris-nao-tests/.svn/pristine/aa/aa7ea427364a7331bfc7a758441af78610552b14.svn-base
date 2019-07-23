@@ -1,0 +1,81 @@
+package com.doosan.nao.PageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class SelectOrgPage {
+
+	
+	
+	
+
+	
+
+	
+
+	
+	
+	@FindBy(how=How.XPATH, using=".//*[@id='search_option1']")
+	public WebElement searchByFirstDropdown;
+	public void searchByFirstDropdown(String brand)
+	{try {
+			Thread.sleep(30000);
+		} catch (InterruptedException e) {
+			
+		}
+		Select firstSelect=new Select(searchByFirstDropdown);
+		firstSelect.selectByVisibleText(brand);
+	}
+
+	@FindBy(how=How.XPATH, using="html/body/div[2]/div[3]/div/div[3]/form/table/tbody/tr[2]/td[3]/input")
+	public WebElement enterCustomerNumber;
+	public void searchByContainingOptionDropdown(String brand)
+	{
+		Select firstSelect=new Select(searchByBrand);
+		firstSelect.selectByVisibleText(brand);
+	}
+
+	@FindBy(how=How.XPATH, using="html/body/div[2]/div[3]/div/div[3]/form/table/tbody/tr[1]/td[3]/select")
+	public WebElement searchByBrand;
+	public void enterCustomerNo(String customerNo)
+	{
+		this.enterCustomerNumber.clear();
+		this.enterCustomerNumber.sendKeys(customerNo);
+	}
+
+	@FindBy(how=How.XPATH, using="//table[@id='organization_list']/tbody/tr[1]/td[2]/a")
+	public WebElement firstOrgLinkInSearchResultpage;
+	public void clickFirstOrgLink(WebDriver wd)
+	{
+		WebDriverWait waitForFirstOrgLink=new WebDriverWait(wd, 300);
+		waitForFirstOrgLink.until(ExpectedConditions.elementToBeClickable(firstOrgLinkInSearchResultpage));
+		this.firstOrgLinkInSearchResultpage.click();
+		
+	}
+	
+	
+	@FindBy(how=How.XPATH, using="html/body/div[2]/div[3]/div/div[3]/form/button")
+	public WebElement searchButtonOrgPage;
+	public void clickSearchButton()
+	{
+		this.searchButtonOrgPage.click();
+	}
+	
+	
+	@FindBy(how=How.ID,using="userinfo")
+	public WebElement welcomeTextw;
+	public boolean verifyWelcomeText(EventFiringWebDriver wd,String welcomeText)
+	{WebDriverWait waitForFirstOrgLink=new WebDriverWait(wd, 300);
+	waitForFirstOrgLink.until(ExpectedConditions.visibilityOf(welcomeTextw));
+		System.out.println(welcomeText);
+		System.out.println(welcomeText.substring(welcomeText.length()-5));
+		
+		return this.welcomeTextw.getText().contains(welcomeText.substring(welcomeText.length()-5));
+	}
+}

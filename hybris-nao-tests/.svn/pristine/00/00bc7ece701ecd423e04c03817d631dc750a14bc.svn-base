@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Test pass]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18646" started-at="2015-03-24T16:03:07Z" finished-at="2015-03-24T16:03:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18646" started-at="2015-03-24T16:03:07Z" finished-at="2015-03-24T16:03:26Z">
+      <class name="Testing1">
+        <test-method status="PASS" signature="validateOrderId()[pri:0, instance:Testing1@3dbd56d0]" name="validateOrderId" duration-ms="18631" started-at="2015-03-24T21:33:07Z" finished-at="2015-03-24T21:33:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateOrderId -->
+      </class> <!-- Testing1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

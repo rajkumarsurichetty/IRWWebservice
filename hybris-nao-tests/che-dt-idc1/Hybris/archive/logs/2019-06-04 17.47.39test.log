@@ -1,0 +1,134 @@
+2019-06-04 14:06:15,873 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchTwoContains~chrome:passed
+2019-06-04 16:12:57,648 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgExistenceTwoDropDown
+2019-06-04 16:12:57,649 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgExistenceTwoDropDown
+2019-06-04 16:12:58,264 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgExistenceTwoDropDown
+2019-06-04 16:12:58,391 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgExistenceTwoDropDown
+2019-06-04 16:12:58,447 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgExistenceTwoDropDown
+2019-06-04 16:12:58,448 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgExistenceTwoDropDown
+2019-06-04 16:14:29,958 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchByBrand
+2019-06-04 16:14:29,959 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchByBrand
+2019-06-04 16:14:30,636 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification completed::SelectOrgSearchByBrand
+2019-06-04 16:15:35,132 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchByBrand
+2019-06-04 16:15:35,133 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchByBrand
+2019-06-04 16:15:35,859 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchByBrand
+2019-06-04 16:15:35,999 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchByBrand
+2019-06-04 16:15:36,041 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchByBrand
+2019-06-04 16:15:36,041 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchByBrand
+2019-06-04 16:16:21,652 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:failed
+2019-06-04 16:20:37,735 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchByBrand
+2019-06-04 16:20:37,736 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchByBrand
+2019-06-04 16:20:38,482 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchByBrand
+2019-06-04 16:20:38,626 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchByBrand
+2019-06-04 16:20:38,663 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchByBrand
+2019-06-04 16:20:38,664 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchByBrand
+2019-06-04 16:23:25,941 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:failed
+2019-06-04 16:54:26,052 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchByBrand
+2019-06-04 16:54:26,053 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchByBrand
+2019-06-04 16:54:26,666 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchByBrand
+2019-06-04 16:54:26,788 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchByBrand
+2019-06-04 16:54:26,818 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchByBrand
+2019-06-04 16:54:26,818 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchByBrand
+2019-06-04 16:55:42,921 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:failed
+2019-06-04 16:56:45,461 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchByBrand
+2019-06-04 16:56:45,462 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchByBrand
+2019-06-04 16:56:46,085 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchByBrand
+2019-06-04 16:56:46,212 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchByBrand
+2019-06-04 16:56:46,239 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchByBrand
+2019-06-04 16:56:46,257 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchByBrand
+2019-06-04 16:57:59,926 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:failed
+2019-06-04 16:59:13,132 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchByBrand
+2019-06-04 16:59:13,134 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchByBrand
+2019-06-04 16:59:13,953 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchByBrand
+2019-06-04 16:59:14,074 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchByBrand
+2019-06-04 16:59:14,106 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchByBrand
+2019-06-04 16:59:14,106 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchByBrand
+2019-06-04 17:04:55,596 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:passed
+2019-06-04 17:05:33,384 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:07:50,014 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:passed
+2019-06-04 17:08:27,499 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:24:56,895 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgPageUITest
+2019-06-04 17:24:56,898 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgPageUITest
+2019-06-04 17:24:57,521 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgPageUITest
+2019-06-04 17:24:57,627 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgPageUITest
+2019-06-04 17:24:57,660 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgPageUITest
+2019-06-04 17:24:57,660 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgPageUITest
+2019-06-04 17:25:40,253 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-06-04 17:26:18,130 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:27:03,086 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-06-04 17:27:40,566 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:27:43,195 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgExistenceTwoDropDown
+2019-06-04 17:27:43,196 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgExistenceTwoDropDown
+2019-06-04 17:27:43,288 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgExistenceTwoDropDown
+2019-06-04 17:27:43,362 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgExistenceTwoDropDown
+2019-06-04 17:27:43,393 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgExistenceTwoDropDown
+2019-06-04 17:27:43,394 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgExistenceTwoDropDown
+2019-06-04 17:28:23,671 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-06-04 17:29:01,124 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:29:41,338 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-06-04 17:30:18,784 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:30:22,213 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchOptsInDropdwTest
+2019-06-04 17:30:22,214 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchOptsInDropdwTest
+2019-06-04 17:30:22,293 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchOptsInDropdwTest
+2019-06-04 17:30:22,345 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchOptsInDropdwTest
+2019-06-04 17:30:22,364 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchOptsInDropdwTest
+2019-06-04 17:30:22,364 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchOptsInDropdwTest
+2019-06-04 17:31:01,417 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchOptionsInDropdownTest~chrome:passed
+2019-06-04 17:31:39,774 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:32:27,218 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchOptionsInDropdownTest~chrome:passed
+2019-06-04 17:33:04,670 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-06-04 17:33:07,122 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgIsOptionDisabledTest
+2019-06-04 17:33:07,123 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgIsOptionDisabledTest
+2019-06-04 17:33:07,192 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgIsOptionDisabledTest
+2019-06-04 17:33:07,240 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgIsOptionDisabledTest
+2019-06-04 17:33:07,262 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgIsOptionDisabledTest
+2019-06-04 17:33:07,262 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgIsOptionDisabledTest
+2019-06-04 17:34:00,725 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgIsOptionDisabledTest~chrome:passed
+2019-06-04 17:34:58,954 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgIsOptionDisabledTest~chrome:passed
+2019-06-04 17:35:14,178 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchOrgNameTest
+2019-06-04 17:35:14,179 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchOrgNameTest
+2019-06-04 17:35:14,238 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchOrgNameTest
+2019-06-04 17:35:14,287 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchOrgNameTest
+2019-06-04 17:35:14,308 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchOrgNameTest
+2019-06-04 17:35:14,308 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchOrgNameTest
+2019-06-04 17:35:56,506 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchOrgNameTest~chrome:passed
+2019-06-04 17:37:02,675 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchOrgNameTest~chrome:passed
+2019-06-04 17:37:18,399 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchCustomerNumTest2
+2019-06-04 17:37:18,399 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchCustomerNumTest2
+2019-06-04 17:37:18,468 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchCustomerNumTest2
+2019-06-04 17:37:18,507 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchCustomerNumTest2
+2019-06-04 17:37:18,519 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchCustomerNumTest2
+2019-06-04 17:37:18,519 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchCustomerNumTest2
+2019-06-04 17:37:59,627 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchCustomerNumTest2~chrome:passed
+2019-06-04 17:38:52,102 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchCustomerNumTest2~chrome:passed
+2019-06-04 17:39:08,103 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelOrgSrchByCityStateTest
+2019-06-04 17:39:08,103 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelOrgSrchByCityStateTest
+2019-06-04 17:39:08,140 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelOrgSrchByCityStateTest
+2019-06-04 17:39:08,182 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelOrgSrchByCityStateTest
+2019-06-04 17:39:08,194 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelOrgSrchByCityStateTest
+2019-06-04 17:39:08,194 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelOrgSrchByCityStateTest
+2019-06-04 17:39:48,632 INFO  [com.doosan.nao.reports.ReportGenerator] SelOrgSrchByCityStateTest~chrome:passed
+2019-06-04 17:40:55,177 INFO  [com.doosan.nao.reports.ReportGenerator] SelOrgSrchByCityStateTest~chrome:passed
+2019-06-04 17:41:54,589 INFO  [com.doosan.nao.reports.ReportGenerator] SelOrgSrchByCityStateTest~chrome:passed
+2019-06-04 17:42:09,084 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchByBrand
+2019-06-04 17:42:09,085 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchByBrand
+2019-06-04 17:42:09,168 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchByBrand
+2019-06-04 17:42:09,197 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchByBrand
+2019-06-04 17:42:09,210 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchByBrand
+2019-06-04 17:42:09,210 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchByBrand
+2019-06-04 17:43:19,781 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:passed
+2019-06-04 17:44:52,021 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchByBrand~chrome:passed
+2019-06-04 17:45:07,275 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchTwoContains
+2019-06-04 17:45:07,275 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchTwoContains
+2019-06-04 17:45:07,315 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchTwoContains
+2019-06-04 17:45:07,342 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchTwoContains
+2019-06-04 17:45:07,355 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchTwoContains
+2019-06-04 17:45:07,355 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchTwoContains
+2019-06-04 17:45:48,920 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchTwoContains~chrome:passed
+2019-06-04 17:46:45,173 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchTwoContains~chrome:passed
+2019-06-04 17:47:00,801 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchResultZero
+2019-06-04 17:47:00,801 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchResultZero
+2019-06-04 17:47:00,836 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchResultZero
+2019-06-04 17:47:00,879 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchResultZero
+2019-06-04 17:47:00,894 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchResultZero
+2019-06-04 17:47:00,894 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchResultZero
+2019-06-04 17:47:39,184 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchResultZero~chrome:passed

@@ -1,0 +1,12 @@
+2019-07-19 15:03:40,122 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test initiated:::
+2019-07-19 15:16:06,440 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test::: completed
+2019-07-19 15:16:06,440 INFO  [com.doosan.nao.reports.ReportGenerator] Invalid file test:passed
+2019-07-19 15:16:24,250 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed
+2019-07-19 15:17:53,807 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::BatchOrderUploadTest
+2019-07-19 15:17:53,808 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::BatchOrderUploadTest
+2019-07-19 15:17:54,957 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::BatchOrderUploadTest
+2019-07-19 15:17:55,145 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::BatchOrderUploadTest
+2019-07-19 15:17:55,247 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::BatchOrderUploadTest
+2019-07-19 15:17:55,248 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::BatchOrderUploadTest
+2019-07-19 15:20:21,081 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test initiated:::
+2019-07-19 15:20:38,937 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:failed

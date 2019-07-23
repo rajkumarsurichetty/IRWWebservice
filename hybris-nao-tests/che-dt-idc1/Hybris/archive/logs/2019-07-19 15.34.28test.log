@@ -1,0 +1,9 @@
+2019-07-19 15:22:56,216 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test initiated:::
+2019-07-19 15:23:32,446 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test::: completed
+2019-07-19 15:23:32,446 INFO  [com.doosan.nao.reports.ReportGenerator] Invalid file test:passed
+2019-07-19 15:23:48,429 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed
+2019-07-19 15:27:43,914 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test initiated:::
+2019-07-19 15:27:43,914 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test::: completed
+2019-07-19 15:27:43,915 INFO  [com.doosan.nao.reports.ReportGenerator] Valid file test:passed
+2019-07-19 15:28:19,093 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed
+2019-07-19 15:34:28,715 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:failed

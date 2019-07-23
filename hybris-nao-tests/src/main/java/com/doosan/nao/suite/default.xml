@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Demo3">
+
+<suite-files>
+        <suite-file path="C:\projects3\selenium\hybris_nao\src\main\java\com\doosan\nao\suite\accountHistorySuite.xml"/>
+        <suite-file path="C:\projects3\selenium\hybris_nao\src\main\java\com\doosan\nao\suite\classOrderSuite.xml"/>
+</suite-files>
+    
+</suite> <!-- Default suite -->
+
+
+     
+           
+                       

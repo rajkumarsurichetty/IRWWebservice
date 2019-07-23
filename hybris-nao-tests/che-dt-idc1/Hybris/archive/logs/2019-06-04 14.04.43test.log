@@ -1,0 +1,8 @@
+2019-06-04 14:02:37,436 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchTwoContains~chrome:passed
+2019-06-04 14:03:58,253 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchTwoContains
+2019-06-04 14:03:58,256 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchTwoContains
+2019-06-04 14:03:58,994 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchTwoContains
+2019-06-04 14:03:59,136 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchTwoContains
+2019-06-04 14:03:59,181 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchTwoContains
+2019-06-04 14:03:59,181 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchTwoContains
+2019-06-04 14:04:43,897 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchTwoContains~chrome:passed

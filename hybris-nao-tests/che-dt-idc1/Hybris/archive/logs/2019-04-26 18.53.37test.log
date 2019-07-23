@@ -1,0 +1,7 @@
+2019-04-26 18:53:00,552 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchOptsInDropdwTest
+2019-04-26 18:53:00,553 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchOptsInDropdwTest
+2019-04-26 18:53:01,163 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchOptsInDropdwTest
+2019-04-26 18:53:01,296 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchOptsInDropdwTest
+2019-04-26 18:53:01,353 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchOptsInDropdwTest
+2019-04-26 18:53:01,353 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchOptsInDropdwTest
+2019-04-26 18:53:37,247 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchOptionsInDropdownTest~chrome:failed

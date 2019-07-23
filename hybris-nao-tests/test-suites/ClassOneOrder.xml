@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true" thread-count="5"  parallel="tests"  name="IE9" >
+		
+<test group-by-instances="true" preserve-order="true"  name="com.doosan.nao.classOrderTest.ClassOneOrderValidator For fireFox" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.classOrderTest.ClassOneOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+
+		<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.classOrderTest.ClassTwoOrderValidator for Chrome" >
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.classOrderTest.ClassTwoOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+		<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.classOrderTest.ClassThreeOrderValidator for IE11" >
+		<parameter name="browser" value="IE11" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.classOrderTest.ClassThreeOrderValidator" />
+			
+		</classes>
+		</test> <!-- Default test -->
+		
+				<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.classOrderTest.ClassFourOrderValidator for IE10" >
+		<parameter name="browser" value="IE10" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.classOrderTest.ClassFourOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+				<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.classOrderTest.Class48HoursOrderValidator for IE9" >
+		<parameter name="browser" value="IE9" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.classOrderTest.Class48HoursOrderValidator" />
+			
+		</classes>
+		</test> <!-- Default test -->		
+												
+										
+</suite> <!-- Default suite -->

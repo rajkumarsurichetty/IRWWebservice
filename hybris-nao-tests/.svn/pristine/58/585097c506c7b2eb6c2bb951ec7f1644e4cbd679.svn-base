@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="iotPassword" value="Welcome@3"/>
+  <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+  <parameter name="url" value="https://portal-dev.telit.com/app/login"/>
+  <test name="Test4(failed)" parallel="tests">
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="url" value="https://portal-dev.telit.com/app/login"/>
+    <classes>
+      <class name="com.doosan.nao.test.TestExample">
+        <methods>
+          <include name="run" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.doosan.nao.test.TestExample -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+</suite> <!-- Failed suite [Suite] -->

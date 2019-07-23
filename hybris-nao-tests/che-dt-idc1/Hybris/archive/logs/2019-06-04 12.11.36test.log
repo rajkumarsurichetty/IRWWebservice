@@ -1,0 +1,10 @@
+2019-06-04 12:02:47,876 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgResultPerPageTest~chrome:failed
+2019-06-04 12:03:49,687 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgResultPerPageTest~chrome:failed
+2019-06-04 12:04:55,070 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgResultPerPageTest~chrome:failed
+2019-06-04 12:09:13,578 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgResultPerPageTest
+2019-06-04 12:09:13,580 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgResultPerPageTest
+2019-06-04 12:09:14,431 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgResultPerPageTest
+2019-06-04 12:09:14,580 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgResultPerPageTest
+2019-06-04 12:09:14,644 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgResultPerPageTest
+2019-06-04 12:09:14,645 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgResultPerPageTest
+2019-06-04 12:11:36,169 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgResultPerPageTest~chrome:failed

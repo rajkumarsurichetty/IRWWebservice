@@ -1,0 +1,8 @@
+2019-06-17 19:30:01,365 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-06-17 19:51:08,920 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgExistenceTwoDropDown
+2019-06-17 19:51:08,922 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgExistenceTwoDropDown
+2019-06-17 19:51:09,517 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgExistenceTwoDropDown
+2019-06-17 19:51:09,634 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgExistenceTwoDropDown
+2019-06-17 19:51:09,730 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgExistenceTwoDropDown
+2019-06-17 19:51:09,730 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgExistenceTwoDropDown
+2019-06-17 19:51:46,605 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed

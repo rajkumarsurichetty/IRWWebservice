@@ -1,0 +1,10 @@
+<h2>Reporter output</h2><table><tr><td>2015/03/18 21:19:16  :   getDataFromXLS initiated::ClassTwoOrderValidator</td></tr>
+<tr><td>2015/03/18 21:19:16  :   RunModeVerification initited::ClassTwoOrderValidator</td></tr>
+<tr><td>2015/03/18 21:19:16  :   RunModeDataSearch initated::ClassTwoOrderValidator</td></tr>
+<tr><td>2015/03/18 21:19:16  :   getInputFromMultiInputTestData initated::ClassTwoOrderValidator</td></tr>
+<tr><td>2015/03/18 21:19:16  :   getInputFromMultiInputTestData completed::ClassTwoOrderValidator</td></tr>
+<tr><td>2015/03/18 21:19:16  :   RunModeDataSearch completed::ClassTwoOrderValidator</td></tr>
+<tr><td>2015/03/18 21:19:16  :   ClassTwoOrderValidator is initated with input likes :  brand :>> Doosan    Customer No :>> 1061121  item No :>> 021-00014HEF  Order Class :>>  Browser :>>firefox</td></tr>
+<tr><td>2015/03/18 21:19:16  :   ClassTwoOrderValidator is sucessfully completd with input likes :  brand :>> Doosan    Customer No :>> 1061121  item No :>> 021-00014HEF  Order Class :>>  Browser :>>firefox</td></tr>
+<tr><td>2015/03/18 21:19:16  :   ClassTwoOrderValidator is initated with input likes :  brand :>> Bobcat    Customer No :>> 1226021  item No :>> 6667352  Order Class :>>  Browser :>>firefox</td></tr>
+</table>

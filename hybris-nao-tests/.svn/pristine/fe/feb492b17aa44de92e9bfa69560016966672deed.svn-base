@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true"  name="Test suite For Order Test" parallel="tests" thread-count="5">
+		
+
+		
+		<test verbose="2" group-by-instances="true" preserve-order="true" name="com.doosan.nao.classOrderTest.ClassOneOrderValidator for chrome1" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.ClassOneOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+		<test verbose="2" group-by-instances="true" preserve-order="true" name="com.doosan.nao.pagfactory.classOrderTest.ClassTwoOrderValidator for firefox3" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.ClassTwoOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+		
+		<test verbose="2" group-by-instances="true" preserve-order="true" name="com.doosan.nao.pagfactory.classOrderTest.ClassThreeOrderValidator for firefox6" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.ClassThreeOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+				<test verbose="2" group-by-instances="true" preserve-order="true" name="com.doosan.nao.pagfactory.classOrderTest.ClassFourOrderValidator for firefox7" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.ClassFourOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+		<test verbose="2" group-by-instances="true" preserve-order="true" name="com.doosan.nao.pagfactory.classOrderTest.Class48HoursOrderValidator for firefox9" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.Class48HoursOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+		
+							
+</suite> <!-- Default suite -->
+
+

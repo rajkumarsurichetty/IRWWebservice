@@ -1,0 +1,7 @@
+2019-07-02 16:04:41,673 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdValShopQickVals
+2019-07-02 16:04:41,674 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdValShopQickVals
+2019-07-02 16:04:42,368 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdValShopQickVals
+2019-07-02 16:04:42,534 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdValShopQickVals
+2019-07-02 16:04:42,599 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdValShopQickVals
+2019-07-02 16:04:42,599 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdValShopQickVals
+2019-07-02 16:06:02,353 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValShopQickVals~chrome:failed

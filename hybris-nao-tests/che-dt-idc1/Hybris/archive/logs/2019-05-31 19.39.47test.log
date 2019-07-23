@@ -1,0 +1,9 @@
+2019-05-31 19:33:25,390 INFO  [com.doosan.nao.reports.ReportGenerator] SelOrgSrchByCityStateTest~chrome:passed
+2019-05-31 19:36:48,231 INFO  [com.doosan.nao.reports.ReportGenerator] SelOrgSrchByCityStateTest~chrome:passed
+2019-05-31 19:39:01,340 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelOrgSrchByCityStateTest
+2019-05-31 19:39:01,342 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelOrgSrchByCityStateTest
+2019-05-31 19:39:02,375 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelOrgSrchByCityStateTest
+2019-05-31 19:39:02,573 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelOrgSrchByCityStateTest
+2019-05-31 19:39:02,655 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelOrgSrchByCityStateTest
+2019-05-31 19:39:02,655 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelOrgSrchByCityStateTest
+2019-05-31 19:39:47,121 INFO  [com.doosan.nao.reports.ReportGenerator] SelOrgSrchByCityStateTest~chrome:passed

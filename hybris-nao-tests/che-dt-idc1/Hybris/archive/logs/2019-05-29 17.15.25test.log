@@ -1,0 +1,9 @@
+2019-05-29 14:37:29,346 INFO  [com.doosan.nao.reports.ReportGenerator] ShoppingCartDuplicateLine~chrome:failed
+2019-05-29 14:37:32,619 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-05-29 17:02:38,098 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::ShoppingCartDuplicateLine
+2019-05-29 17:02:38,100 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::ShoppingCartDuplicateLine
+2019-05-29 17:02:38,942 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::ShoppingCartDuplicateLine
+2019-05-29 17:02:39,157 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::ShoppingCartDuplicateLine
+2019-05-29 17:02:39,227 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::ShoppingCartDuplicateLine
+2019-05-29 17:02:39,229 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::ShoppingCartDuplicateLine
+2019-05-29 17:15:25,088 INFO  [com.doosan.nao.reports.ReportGenerator] ShoppingCartDuplicateLine~chrome:passed

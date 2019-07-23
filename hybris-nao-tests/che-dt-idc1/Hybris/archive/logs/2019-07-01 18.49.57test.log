@@ -1,0 +1,17 @@
+2019-07-01 15:27:22,782 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddCart~chrome:passed
+2019-07-01 15:29:02,929 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddCart~chrome:passed
+2019-07-01 15:30:50,115 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddCart~chrome:passed
+2019-07-01 18:43:24,822 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:43:24,823 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:43:25,518 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:43:25,646 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:43:25,683 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:43:25,684 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:44:58,428 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddCart~chrome:failed
+2019-07-01 18:48:28,392 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:48:28,393 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:48:29,124 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:48:29,259 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:48:29,296 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:48:29,296 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdVerifyEmptyTableAddLine
+2019-07-01 18:49:57,265 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddCart~chrome:passed

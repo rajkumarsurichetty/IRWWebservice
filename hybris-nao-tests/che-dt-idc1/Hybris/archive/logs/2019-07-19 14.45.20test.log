@@ -1,0 +1,10 @@
+2019-07-18 15:34:48,277 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed
+2019-07-19 14:24:57,021 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::BatchOrderUploadTest
+2019-07-19 14:24:57,022 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::BatchOrderUploadTest
+2019-07-19 14:24:58,482 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::BatchOrderUploadTest
+2019-07-19 14:24:58,643 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::BatchOrderUploadTest
+2019-07-19 14:24:58,710 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::BatchOrderUploadTest
+2019-07-19 14:24:58,710 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::BatchOrderUploadTest
+2019-07-19 14:26:59,214 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test initiated:::
+2019-07-19 14:31:37,653 INFO  [com.doosan.nao.reports.ReportGenerator] Batch Order Upload Test initiated:::
+2019-07-19 14:45:20,466 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:failed

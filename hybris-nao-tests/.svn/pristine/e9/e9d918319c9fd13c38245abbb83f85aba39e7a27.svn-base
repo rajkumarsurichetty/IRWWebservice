@@ -1,0 +1,437 @@
+package com.doosan.nao.fleetManagements.page;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class IOTPortalHomePage {
+	
+	@FindBy(how =How.ID,using="a-header-dashboards")
+	WebElement dashboard;
+	public void clickDashBoard(){
+		dashboard.click();
+	}
+	@FindBy(how =How.ID,using="a-header-things")
+	WebElement things;
+	public void clickThings(WebDriver wd){
+		
+		/*try {
+			highlightMyElement(clickActive, 3, wd);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		WebDriverWait waitForFirstOrgLink=new WebDriverWait(wd, 120);
+		waitForFirstOrgLink.until(ExpectedConditions.elementToBeClickable(things));
+		things.click();
+		try {
+			//WebDriverWait waitForFirstOrgLink=new WebDriverWait(wd, 120);
+			waitForFirstOrgLink.until(ExpectedConditions.elementToBeClickable(clickHere));
+			//Thread.sleep(8000);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	@FindBy(how =How.ID,using="a-header-connections")
+	WebElement connections;
+	public void clickConnections(){
+		connections.click();
+	}
+	@FindBy(how =How.XPATH,using="//div[contains(@class,'org-name-switch')]/a")
+	WebElement orgSwitch;
+	public void clickOrganizationSwitch(EventFiringWebDriver wd){
+		wd.manage().window().maximize();
+		try {
+			//Thread.sleep(9000);
+			WebDriverWait wait =new WebDriverWait(wd, 180);
+			wait.until(ExpectedConditions.elementToBeClickable(orgSwitch));
+			highlightMyElement(orgSwitch, 3, wd);
+		} catch (Exception e) {
+			
+		}
+		orgSwitch.click();
+	}
+	
+	@FindBy(linkText="DBI_QA")
+	WebElement selectEnvironment;
+	public void selectEnvironment(WebDriver wd){
+		try {
+			highlightMyElement(selectEnvironment, 3, wd);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		selectEnvironment.click();
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@FindBy(linkText="active")
+	WebElement clickActive;
+	public void clickActiveEquipments(WebDriver wd){
+		try {
+			highlightMyElement(clickActive, 3, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			highlightMyElement(clickActive, 3, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		clickActive.click();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	@FindBy(linkText="dealer")
+	WebElement dealer;
+	public void selectDealer(WebDriver wd){
+		try {
+			highlightMyElement(dealer, 3, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		dealer.click();
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@FindBy(xpath="//*[@id='tagcloud']/span/a")
+	WebElement clickHere;
+	public void clickHereForMoreOrg(WebDriver wd){
+		try {
+			highlightMyElement(clickHere, 3, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		clickHere.click();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@FindBy(how=How.LINK_TEXT,using="org1489")
+	public WebElement orgLink;
+	public void clickOrganizationLik(WebDriver wd){
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			highlightMyElement(orgLink, 3, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		orgLink.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@FindBy(how=How.XPATH,using="//a[contains(text(),'Table')]")
+	public WebElement thingsTable;
+	public void clickThingsTableTab(WebDriver wd){
+		try {
+			highlightMyElement(thingsTable, 3, wd);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		thingsTable.click();
+	}
+	@FindBy(xpath=".//*[@id='ThingActionForm']")
+	public WebElement equpmentsTl;
+	public void totalEquipments(){
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		String tequimoments=equpmentsTl.getText();
+		String tot=tequimoments.substring(2,5);
+		System.out.println(tequimoments.substring(2,5).trim());
+	}
+	
+	@FindBy(xpath="//form/table/tbody")
+	WebElement equipmentsIotGrid;
+	public List<String> getIOTEquipmentsTable(WebDriver wd){
+		try {
+			highlightMyElement(equipmentsIotGrid, 3, wd);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return tableDataRead(equipmentsIotGrid);
+	}
+	@FindBy(id="ThingActionForm")
+	WebElement iotFrameid;
+	public void switchToframeid(){
+		
+	}
+	
+	
+	
+	/**  
+	 * Equipments details
+	 * 
+	 */
+	//@FindBy(xpath="(//span[@class='glyphicons eye-open hidden-print'])[25]")
+	@FindBy(xpath="//*[@id='thing-576414f9b2157c263dd7d5e4']/td[1]/a[1]/span[2]")
+	WebElement eyeView;String xpathEyeView;String eyeElement;String precedeElement;
+	//FleetManagementEquipmentPage ftpage=new FleetManagementEquipmentPage();
+	
+	public void clickEyeView(WebDriver wd,String equipment){
+	
+		List<String>IOTequipment =getIOTEquipmentsTable(wd);
+		int i=1;precedeElement="/preceding::td[2]/a[1]";
+		for (String eNo : IOTequipment) {
+			xpathEyeView=".//table[@class='table table-striped rwd table-configuration']/tbody/tr["+i+"]/td[3]";
+			
+			if(eNo.equalsIgnoreCase(equipment)){
+				eyeElement=xpathEyeView+precedeElement;
+				eyeView =wd.findElement(By.xpath(eyeElement));
+				
+			}
+			i++;
+		}
+		
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		eyeView.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block .//*[@id='wrap']/div[4]/ul/li[1]/a
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@FindBy(xpath=".//*[@id='wrap']/div[4]/ul/li[1]/a")
+	WebElement clickThings;
+	public void reClickThings(){
+		clickThings.click();
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@FindBy(xpath="//table[@class='table table-striped table-responsive']/tbody")
+	WebElement viewEyeDetails;
+	public Map<String, String> getTableViewEyeDetails(){
+		return viewEquipmentDetailsTable(viewEyeDetails);
+	}
+	@FindBy(xpath="//td/span[@class='text-muted']")
+	WebElement tdata;
+	public Map<String, String> viewEquipmentDetailsTable(WebElement tableElement) {
+		Map<String, String>eyeDetail=new HashMap<String, String>();
+		List<WebElement> rows = tableElement.findElements(By.tagName("tr"));
+		System.out.println("Total Table rows is =>"+( rows.size()));
+		
+		for (int row = 0; row < rows.size(); row++) {
+			
+			List<WebElement> cols = rows.get(row)
+					.findElements(By.tagName("td"));
+			/*String key=cols.get(1).getText();
+			if(key.equals("acr_status")||key.equals("device_event_type")||key.equals("dr_status")||key.equals("service_status")||key.equals("status"))
+			{System.out.println(" IOTEquipments > "+cols.get(1).getText() +" <=> "+cols.get(2).getText());
+			eyeDetail.put(cols.get(1).getText(), cols.get(2).getText());
+			}*/
+			String value=cols.get(2).getText().trim();
+			//System.out.println("Flag value  ="+value.length());
+			if(value.length()>0){
+				//System.out.println(" IOTEquipments > "+cols.get(1).getText() +" <=> "+cols.get(2).getText());
+				eyeDetail.put(cols.get(1).getText(), cols.get(2).getText());
+			}else{
+				//System.out.println(" No data");
+			}
+			
+			for (int col = 1; col < cols.size()-1; col++) {
+				
+				//System.out.println( " => "+cols.get(col).getText());
+
+			}
+		}
+		
+		return eyeDetail;
+	}
+	
+	
+	/**
+	 * This method to get the data from WebTable
+	 */
+	public List<String> tableDataRead(WebElement tableElement) {
+		List <String>equipmets =new ArrayList<String>();
+		List<WebElement> rows = tableElement.findElements(By.tagName("tr"));
+		System.out.println("Total Table rows is =>"+( rows.size()));
+		
+		for (int row = 0; row < rows.size(); row++) {
+			List<WebElement> cols = rows.get(row)
+					.findElements(By.tagName("td"));
+			
+			//System.out.println(" IOTEquipments > "+cols.get(1).getText());
+			equipmets.add(cols.get(2).getText());
+			for (int col = 1; col < cols.size()-1; col++) {
+				
+				//System.out.println( " => "+cols.get(col).getText());
+
+			}
+		}
+		return equipmets;
+	}
+	public  void highlightMyElement(WebElement element, int waitSeconds, WebDriver webdriver)
+			throws IOException {
+		for (int i = 0; i < waitSeconds; i++) {
+			JavascriptExecutor js = (JavascriptExecutor) webdriver;
+			js.executeScript(
+					"arguments[0].setAttribute('style', arguments[1]);",
+					element, "color: red; border: 5px solid red;");
+			js.executeScript(
+					"arguments[0].setAttribute('style', arguments[1]);",
+					element, "");
+
+		}
+
+	}
+	int ind=0;WebElement xp;
+	@FindBy(xpath="//form/table/tbody")
+	WebElement tableEyeToEquipvalue;
+	public void gettableEyeValue(WebDriver wd){
+		List<String> rowIndex=new ArrayList<String>();
+		List<WebElement>rows=tableEyeToEquipvalue.findElements(By.tagName("tr"));
+		for(int r=0;r<rows.size();r++){
+			
+			List<WebElement>cols=rows.get(r).findElements(By.tagName("td"));
+			System.out.println( cols.get(2).getText());
+			rowIndex.add(cols.get(2).getText());
+			if(cols.get(2).getText().equalsIgnoreCase("aljg18918")){
+			 ind=rowIndex.indexOf("aljg18918");
+			System.out.println(ind);
+			int row=(ind)+1;
+			wd.findElement(By.xpath( "//form/table/tbody/tr["+row+"]/td[1]/a[1]/span[2]")).click();
+			try {
+				Thread.sleep(4000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			break;
+			}
+			
+		}
+		
+	}
+	
+	/*int row=(ind)+1;
+	
+	
+	
+	public void clickEyeOfEqupment(){
+		System.out.println(ind);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			highlightMyElement(clickEyeEquipment, 3, wd);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		xp.click();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}*/
+	@FindBy(xpath="//div[@id='value-unit-retail_threshold']/span")
+	WebElement retaildThreshold;
+	
+	@FindBy (xpath="//div[@id='value-unit-retail_threshold']/following-sibling::div[@id='graph_retail_threshold']")
+	WebElement retailedThreasholdGraph;
+	int retailts;
+	public String getRetailThresholdValue(WebDriver wd){
+		JavascriptExecutor jse = (JavascriptExecutor) wd;
+		 
+		   // WebElement element = wd.findElement(By.linkText("Google.com.ph"));
+		    jse.executeScript("arguments[0].scrollIntoView();", retaildThreshold);
+		    try {
+				Thread.sleep(60000L);
+			} catch (InterruptedException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		try {
+			try {
+				Thread.sleep(30000L);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			WebDriverWait waitForFirstOrgLink=new WebDriverWait(wd, 200);
+			waitForFirstOrgLink.until(ExpectedConditions.elementToBeClickable(retailedThreasholdGraph));
+			highlightMyElement(retaildThreshold, 3, wd);
+		} catch (Exception e) {
+			
+		}
+		WebDriverWait waitForFirstOrgLink=new WebDriverWait(wd, 200);
+		waitForFirstOrgLink.until(ExpectedConditions.elementToBeClickable(retailedThreasholdGraph));
+		String retailT=retaildThreshold.getText().trim();
+		//System.out.println(retailT+ " Inger val"+Integer.parseInt(retailT));
+		return retailT;
+		
+		
+		
+	}
+	
+}

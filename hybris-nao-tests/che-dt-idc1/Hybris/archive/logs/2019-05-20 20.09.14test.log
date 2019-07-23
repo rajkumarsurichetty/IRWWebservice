@@ -1,0 +1,20 @@
+2019-05-20 19:26:41,132 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchOrgNameTest~chrome:passed
+2019-05-20 20:06:37,670 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:37,672 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:38,444 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:38,666 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:38,668 INFO  [com.doosan.nao.reports.ReportGenerator] in is null
+2019-05-20 20:06:38,669 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:46,933 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:46,933 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:47,534 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:47,650 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:06:47,656 INFO  [com.doosan.nao.reports.ReportGenerator] in is null
+2019-05-20 20:06:47,656 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:08:34,751 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:08:34,752 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:08:35,366 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:08:35,479 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:08:35,518 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:08:35,519 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgSearchCustomerNumTest2
+2019-05-20 20:09:14,102 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgSearchCustomerNumTest2~chrome:failed

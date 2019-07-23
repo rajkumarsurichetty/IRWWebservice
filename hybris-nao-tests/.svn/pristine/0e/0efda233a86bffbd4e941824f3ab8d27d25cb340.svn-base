@@ -1,0 +1,135 @@
+package com.doosan.nao.pagfactory.classOrderTest;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+public class HomePageTest {
+
+	@Test
+	public void allMakestTest() throws InterruptedException
+	{
+		WebDriver wd=new FirefoxDriver();
+		wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		wd.get("https://qa.doosanpassport.com/Login/Login.aspx");
+		wd.findElement(By.xpath("html/body/div[1]/div/div/div[2]/div[1]/div[3]/div[1]/form/div[2]/dl/dd[1]/input")).sendKeys("rajkumars");
+		wd.findElement(By.xpath("html/body/div[1]/div/div/div[2]/div[1]/div[3]/div[1]/form/div[2]/dl/dd[3]/input")).sendKeys("Welcome2");
+		wd.findElement(By.xpath("html/body/div[1]/div/div/div[2]/div[1]/div[3]/div[1]/form/div[2]/div/input[1]")).click();
+		
+		Thread.sleep(10000);
+		wd.navigate().to("http://parts5.qa.corp.doosan.com/");
+		
+		
+		
+		WebDriverWait wait=new WebDriverWait(wd, 60);
+		wait.until(ExpectedConditions.elementToBeClickable(wd.findElement(By.xpath("html/body/div[2]/div[3]/div/div[3]/div[2]/table/tbody/tr[1]/td[2]/a"))));
+		WebElement firstLink=wd.findElement(By.xpath("html/body/div[2]/div[3]/div/div[3]/div[2]/table/tbody/tr[1]/td[2]/a"));
+		firstLink.click();
+		
+		
+		waitTest(wd, wd.findElement(By.linkText("All Makes")));
+		WebElement AllMakes=wd.findElement(By.linkText("All Makes"));
+		AllMakes.click();
+		wd.navigate().back();
+		
+		
+		waitTest(wd, wd.findElement(By.linkText("Upload an Excel parts list")));
+		WebElement UploadanExcelpartslist=wd.findElement(By.linkText("Upload an Excel parts list"));
+		UploadanExcelpartslist.click();
+		wd.navigate().back();
+	    
+
+		
+		//waitTest(wd, wd.findElement(By.linkText("Import GPES Order")));
+		//WebElement ImportGPESOrder=wd.findElement(By.linkText("Import GPES Order"));
+		//ImportGPESOrder.click();
+		//wd.navigate().back();
+
+		
+		
+		waitTest(wd, wd.findElement(By.linkText("Check Price & Availability")));
+		WebElement  CheckPriceAvailability=wd.findElement(By.linkText("Check Price & Availability"));
+		CheckPriceAvailability.click();
+		wd.navigate().back();
+		
+		
+		waitTest(wd, wd.findElement(By.linkText("Create a New Order")));
+		WebElement  CreateaNewOrder=wd.findElement(By.linkText("Create a New Order"));
+		CreateaNewOrder.click();
+		wd.navigate().back();
+		
+		
+		waitTest(wd, wd.findElement(By.linkText("View saved shopping carts")));
+		WebElement  Viewsavedshoppingcarts=wd.findElement(By.linkText("View saved shopping carts"));
+		Viewsavedshoppingcarts.click();
+		wd.navigate().back();
+	   
+	    
+	    
+		
+		
+		waitTest(wd, wd.findElement(By.linkText("Search Invoices")));
+		WebElement  SearchInvoices=wd.findElement(By.linkText("Search Invoices"));
+		SearchInvoices.click();
+		wd.navigate().back();
+
+
+		
+		waitTest(wd, wd.findElement(By.linkText("Default Shipments")));
+		WebElement  DefaultShipments=wd.findElement(By.linkText("Default Shipments"));
+		DefaultShipments.click();
+		wd.navigate().back();
+
+		WebElement  ProductDiagnostics=wd.findElement(By.linkText("Product Diagnostics"));
+		waitTest(wd, ProductDiagnostics);
+		ProductDiagnostics.click();
+		wd.navigate().back();
+	    
+	   
+		WebElement  SearchOrders=wd.findElement(By.linkText("Search Orders"));
+		waitTest(wd, SearchOrders);
+		SearchOrders.click();
+		wd.navigate().back();
+		
+		WebElement  SearchShipments=wd.findElement(By.linkText("Search Shipments"));
+		waitTest(wd, SearchShipments);
+		SearchShipments.click();
+		wd.navigate().back();
+	    
+	    WebElement  AccessPartsReporting=wd.findElement(By.linkText("Access Parts Reporting"));
+	    waitTest(wd, AccessPartsReporting);
+	    AccessPartsReporting.click();
+		wd.navigate().back();
+
+	    WebElement  CreateaNewPartsClaim=wd.findElement(By.linkText("Create a New Parts Claim"));
+	    waitTest(wd, CreateaNewPartsClaim);
+	    CreateaNewPartsClaim.click();
+		wd.navigate().back();
+		
+	     WebElement  MyOpenPartsClaims=wd.findElement(By.linkText("My Open Parts Claims"));
+	     waitTest(wd, MyOpenPartsClaims);
+	     MyOpenPartsClaims.click();
+		wd.navigate().back();
+		
+	     WebElement  SearchClaimHistory=wd.findElement(By.linkText("Search Claim History"));
+	     waitTest(wd, SearchClaimHistory);
+	     SearchClaimHistory.click();
+		wd.navigate().back();
+
+		
+	}
+	
+	public void waitTest(WebDriver wd, WebElement link)
+	{
+		WebDriverWait wait=new WebDriverWait(wd, 60);
+		wait.until(ExpectedConditions.elementToBeClickable(link));
+		
+	}
+}
+

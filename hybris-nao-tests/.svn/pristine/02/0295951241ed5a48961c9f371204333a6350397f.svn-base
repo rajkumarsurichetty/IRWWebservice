@@ -1,0 +1,275 @@
+package com.doosan.nao.PageFactory;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.Assert;
+
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
+
+public class QuickOrderPage {
+
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/tbody/tr[1]/td[3]/input")
+	public WebElement itemNumber;
+	public void enterItemNumer(String itemNumber)
+	{
+		System.err.println(itemNumber);
+		this.itemNumber.clear();
+		this.itemNumber.sendKeys(itemNumber);
+	}
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.itemNumber.errors']")
+	public WebElement VerifyitemNumberentries0;
+	public void VerifyitemNumberentries0()
+	{ 
+		// verify the error message web element
+		String message=this.VerifyitemNumberentries0.getText();
+		if (message.equals("Invalid item. This item does not exist.")){
+			Assert.assertEquals(message, "Invalid item. This item does not exist.", "item not valid");
+		}else if(message.equals("This item is not available.")){
+			Assert.assertEquals(message, "This item is not available.", "item not valid");
+		//}
+		}else if ( message.equals("You are not contracted to purchase this item.")){
+			Assert.assertEquals(message, "You are not contracted to purchase this item.", "item not valid");
+		}
+		}
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.quantity.errors']")
+	public WebElement Verifyquantityrentries0;
+	public void Verifyquantityrentries0()
+	{
+		//System.err.println(itemNumber);.//*[@id='entries2.quantity.errors'] .//*[@id='entries0.binLocation.errors']
+		//if(Verifyquantityrentries0.isDisplayed()){
+		String message=this.Verifyquantityrentries0.getText();
+		if (message.equals("Invalid Quantity. Please enter a whole number.")){
+			Assert.assertEquals(message, "Invalid Quantity. Please enter a whole number.", "quantity not valid");
+		/*}else if(message.equals("This item is not available.")){
+			Assert.assertEquals(message, "This item is not available.", "item not valid");*/	
+		//}
+		}
+		}
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.binLocation.errors']")
+	public WebElement Verifybinentries0;
+	public void Verifybinentries0()
+	{
+		//System.err.println(itemNumber);.//*[@id='entries2.quantity.errors'] 
+		//if(Verifyquantityrentries0.isDisplayed()){
+		String message=this.Verifybinentries0.getText();
+		if (message.equals("Bin location cannot contain special characters")){
+			Assert.assertEquals(message, "Bin location cannot contain special characters", "Invalid");
+		}else if(message.equals("Quantity cannot be longer than 9 numbers.")){
+			Assert.assertEquals(message, "Quantity cannot be longer than 9 numbers.", "item not valid");	
+		//}
+		}
+		}
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.comments.errors']")
+	public WebElement Verifycommententries0;
+	public void VerifyCommentEntries0()
+	{
+		//System.err.println(itemNumber);.//*[@id='entries2.quantity.errors'] 
+		//if(Verifyquantityrentries0.isDisplayed()){
+		String message=this.Verifycommententries0.getText();
+		if (message.equals("Comments cannot contain special characters")){
+			Assert.assertEquals(message, "Comments cannot contain special characters", "quantity not valid");
+		}else if(message.equals("Comments cannot be longer than 75 characters")){
+			Assert.assertEquals(message, "Comments cannot be longer than 75 characters", "item not valid");	
+		}
+		
+		}
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/tbody/tr[1]/td[4]/input")
+	public WebElement quantity;
+	public void enterQuantity(String qty)
+	{
+		this.quantity.clear();
+		this.quantity.sendKeys(qty);
+	}
+
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/tbody/tr[1]/td[5]/input")
+	public WebElement binLocation;
+	public void enterBinLocation(String binLocation)
+	{
+		this.binLocation.clear();
+		this.binLocation.sendKeys(binLocation);
+	}
+
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/tbody/tr[1]/td[6]/input")
+	public WebElement comments;
+	public void enterComments(String comments)
+	{
+		this.comments.clear();
+		this.comments.sendKeys(comments);
+	}
+	
+	@FindBy(how=How.ID,using="addToCart")
+	public WebElement addToCart;
+	public void clickaddToCart(EventFiringWebDriver wd)
+	{
+		JavascriptExecutor jse = (JavascriptExecutor)wd;
+		jse.executeScript("window.scrollBy(0,550)", "");
+		addToCart.click();
+	}
+	
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='main']/div[1]/div/div/h1")
+	public WebElement quickOrderTextForValidFile;
+	public void verifyQuickOrderTextForValidFile()
+	{
+		Assert.assertTrue(quickOrderTextForValidFile.isDisplayed());
+	}
+	
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderForm']/div[1]/div[2]/h2")
+	public WebElement quickOrderTextForInValidFile;
+	public void verifyQuickOrderTextForInValidFile()
+	{
+		Assert.assertTrue(quickOrderTextForInValidFile.isDisplayed());
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='main']/div[1]/div/h1")
+	public WebElement quickOrderTextForMultipleItemFile;
+	public void verifyQuickOrderTextForMultipleItemFile()
+	{
+		Assert.assertTrue(quickOrderTextForMultipleItemFile.isDisplayed());
+	}
+	
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/thead/tr/th[1]/div")
+	public WebElement selectAllTextInQuickOrderTable;
+	public void verifySelectAllCheckBoxText()
+	{
+		String expectedText="Select All".trim();
+		String actualText=selectAllTextInQuickOrderTable.getText().trim();
+		System.err.println(actualText);
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/thead/tr/th[2]")
+	public WebElement lineNoTextInQuickOrderTable;
+	public void verifyLineNoText()
+	{
+		String expectedText="Line No.".trim();
+		String actualText=lineNoTextInQuickOrderTable.getText().trim();
+		System.err.println(actualText);
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/thead/tr/th[3]")
+	public WebElement itemNoTextInQuickOrderTable;
+	public void verifyItemNoText()
+	{
+		String expectedText="Item Number".trim();
+		String actualText=itemNoTextInQuickOrderTable.getText().trim();
+		System.out.println(actualText);
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/thead/tr/th[4]")
+	public WebElement quantityTextInQuickOrderTable;
+	public void verifyQuantityText()
+	{
+		String expectedText="Quantity".trim();
+		String actualText=quantityTextInQuickOrderTable.getText().trim();
+		System.out.println(actualText);
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/thead/tr/th[5]")
+	public WebElement binLocationTextInQuickOrderTable;
+	public void verifyBinLocationText()
+	{
+		String expectedText="Bin Location".trim();
+		String actualText=binLocationTextInQuickOrderTable.getText().trim();
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/thead/tr/th[6]")
+	public WebElement commentsTextInQuickOrderTable;
+	public void verifyCommentsText()
+	{
+		String expectedText="Bin Location".trim();
+		String actualText=commentsTextInQuickOrderTable.getText().trim();
+		Assert.assertEquals(actualText, expectedText);
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderForm']/div[1]/div[2]/p")
+	public WebElement pleaseEnterAtleastOneText;
+	public void verifyEnterAtleastOneText()
+	{
+		Assert.assertTrue(pleaseEnterAtleastOneText.isDisplayed());
+	}
+	
+
+	public void verifyQuickOrderPageHeaders(EventFiringWebDriver wd)
+	{	
+		
+		WebElement quickOrderResultTable=wd.findElement(By.xpath(".//*[@id='quickOrderTable']"));
+		List<WebElement> rows=quickOrderResultTable.findElements(By.tagName("tr"));
+		System.err.println(rows.size());
+		for (int i=0;i<1;i++)
+		{
+			List<WebElement> cols=rows.get(i).findElements(By.tagName("th"));
+			for(int j=0;j<cols.size();j++)
+			{
+			String header=cols.get(j).getText().trim();
+			if(header.equals("Select All".trim())||header.equals("Line No.".trim())||header.equals("Item Number".trim())||header.equals("Quantity".trim())||header.equals("Bin Location".trim())||header.equals("Comments".trim()))
+			{
+				System.out.println(header+" is validated in result table");
+			} else 
+			{
+				System.out.println(header+" is not present in result table");
+			}
+			}
+		}
+	}
+
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderForm']/div[1]")
+	public WebElement quickOrderFullPageErrorMessage;
+	public void verifyQuickOrderErrorMessage()
+	{
+		quickOrderFullPageErrorMessage.isDisplayed();
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.itemNumber.errors']")
+	public WebElement quickOrderItemErrorMessage;
+	public void verifyQuickOrderItemErrorMessageInTable()
+	{
+		quickOrderItemErrorMessage.isDisplayed();
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.quantity.errors']")
+	public WebElement quickOrderQtyErrorMessage;
+	public void verifyQuickOrderQtyErrorMessageInTable()
+	{
+		quickOrderQtyErrorMessage.isDisplayed();
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.binLocation.errors']")
+	public WebElement quickOrderBinErrorMessage;
+	public void verifyQuickOrderBinErrorMessageInTable()
+	{
+		quickOrderBinErrorMessage.isDisplayed();
+	}
+	
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='entries0.comments.errors']")
+	public WebElement quickOrderCommentsErrorMessage;
+	public void verifyQuickOrderCommentsErrorMessageInTable()
+	{
+		quickOrderCommentsErrorMessage.isDisplayed();
+	}
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderForm']/div[2]/div/div[1]/div[1]/a")
+	public WebElement removeAllInvalidLinesButton;
+	public void verifyRemoveAllInvalidLinesButton()
+	{
+		removeAllInvalidLinesButton.click();
+	}public void clearAllBrowserCache(EventFiringWebDriver wd) throws InterruptedException{
+    	wd.manage().deleteAllCookies();
+    	Thread.sleep(7000);
+    }
+	
+}

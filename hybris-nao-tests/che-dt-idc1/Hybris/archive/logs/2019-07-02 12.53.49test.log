@@ -1,0 +1,15 @@
+2019-07-02 12:27:45,437 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddLine~chrome:passed
+2019-07-02 12:29:36,427 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddLine~chrome:passed
+2019-07-02 12:50:55,683 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:50:55,685 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:50:56,363 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:50:56,475 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:50:56,487 INFO  [com.doosan.nao.reports.ReportGenerator] 
+2019-07-02 12:50:56,487 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:52:27,308 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:52:27,308 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:52:27,978 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:52:28,094 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:52:28,136 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:52:28,136 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdVerifyInvItemAddLine
+2019-07-02 12:53:49,956 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyInvItemAddLine~chrome:passed

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true" name="firefoxTest" thread-count="5" parallel="tests" >
+		<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.classOrderTest.Class48HoursOrderValidator for IE9" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.classOrderTest.Class48HoursOrderValidator" />
+			
+		</classes>
+		</test> <!-- Default test -->		
+
+										
+</suite> <!-- Default suite -->

@@ -1,0 +1,16 @@
+2019-07-11 16:52:09,210 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:failed
+2019-07-16 13:17:37,229 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdInvTextAddLineBox
+2019-07-16 13:17:37,230 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdInvTextAddLineBox
+2019-07-16 13:17:38,525 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdInvTextAddLineBox
+2019-07-16 13:17:38,656 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdInvTextAddLineBox
+2019-07-16 13:17:38,741 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdInvTextAddLineBox
+2019-07-16 13:17:38,741 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdInvTextAddLineBox
+2019-07-16 13:19:18,454 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:failed
+2019-07-16 13:20:27,368 INFO  [com.doosan.nao.reports.ReportGenerator] Destination '\\che-dt-idc1\Hybris\reports\Screenshots' directory cannot be created
+2019-07-16 14:07:53,811 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::SelectOrgExistenceTwoDropDown
+2019-07-16 14:07:53,812 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::SelectOrgExistenceTwoDropDown
+2019-07-16 14:07:54,660 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::SelectOrgExistenceTwoDropDown
+2019-07-16 14:07:54,798 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::SelectOrgExistenceTwoDropDown
+2019-07-16 14:07:54,918 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::SelectOrgExistenceTwoDropDown
+2019-07-16 14:07:54,918 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::SelectOrgExistenceTwoDropDown
+2019-07-16 14:09:02,657 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgExistenceTwoDropDown~chrome:passed

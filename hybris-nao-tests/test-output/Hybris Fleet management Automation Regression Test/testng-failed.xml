@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Hybris Fleet management Automation Regression Test]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Test Class TestFleetManagement(failed)">
+    <parameter name="custNo" value="1225672"/>
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="iotPassword1" value="Welcome@8"/>
+    <parameter name="userName" value="rajkumars"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="iotUSer1" value="p.mahendran@doosan.com"/>
+    <parameter name="password" value="Welcome2"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="brand" value="Bobcat"/>
+    <parameter name="testCaseIDs" value="1387118,1377143,1377144,1377145,1377146,1377147,1377148,1377149,1377150,1377151,1377152,1377153,1377154"/>
+    <classes>
+      <class name="com.doosan.nao.fleetManagements.test.TestFleetManagement">
+        <methods>
+          <include name="testValidateDeleteAssignedEquipment"/>
+          <include name="testValidateAdminTabAndRetailThrehold"/>
+          <include name="testValidateExpiredbyEndHrsLEssOperHrsTomorrowsDate"/>
+          <include name="testValidateAddComments"/>
+          <include name="testValidateNonebyAddingComments"/>
+          <include name="testValidateExpiredbyEndHrsLessOperHrsPastDate"/>
+          <include name="testValidateExpiredbyYesterdayDate"/>
+          <include name="setUpForLoginTest"/>
+          <include name="testValidateWarrantyFieldMods"/>
+          <include name="testValidateManageNotifiationTab"/>
+          <include name="testValidateActivebyAddingComments"/>
+          <include name="testValidateExpiredbyAddingComments"/>
+          <include name="testValidateCodeTab"/>
+          <include name="testValidateEquipmetsIOTtoFMPortal"/>
+          <include name="testValidatePMStatus"/>
+          <include name="testValidateErrormessageByEnterZeroEndHrs"/>
+          <include name="testValidateActiveByEnteringOperatinghrsNoDate"/>
+          <include name="testValidateDeleteCommnets"/>
+          <include name="testValidateNonebyClickinOnDeleteonAlreadyActive"/>
+          <include name="testValidateNonebyDeletePm"/>
+          <include name="testValidateAddNewComments"/>
+          <include name="testValidateEquipmentsInGrid"/>
+          <include name="testValidateActiveByEnteringOperatinghrsAndEndDateCurrentDate"/>
+          <include name="testValidateManageGeofences"/>
+          <include name="testValidateDeleteGeofence"/>
+          <include name="testValidateRetailTresholdValue"/>
+          <include name="testValidateIOTToFMEquipmentDetails"/>
+          <include name="testValidateNoComments"/>
+          <include name="testValidateExpiredbyEndHouseLessthanOperationHours"/>
+          <include name="testValidateActiveByEnteringCurrentDateNoOperatingHrs"/>
+          <include name="testValidatefleetManagementLink"/>
+          <include name="testValidateActiveByDateTomorrow"/>
+          <include name="testValidateFleetmanagementTabs"/>
+          <include name="testValidateNoneByClearAllPopupfileds"/>
+          <include name="testValidateAssignMachines"/>
+          <include name="testValidateActivebyEndHrsMoreOperHrsTomorrows"/>
+          <include name="testValidateExpiredbyEndHrsmoreOperHrsYesterdayDate"/>
+          <include name="testValidateLocationHistory"/>
+          <include name="testValidateActivedbyEndHouseMorethanOperationHours"/>
+          <include name="testValidateNonebyClickinOnDeleteonAlreadyExpired"/>
+          <include name="testValidateExpiredbyEndHrsLessOperHrsYesterday"/>
+          <include name="testValidateEquipmentDetails"/>
+          <include name="testValidateActivebyEndHrsMoreOperHrsAndFutureDate"/>
+          <include name="testValidateTotalComments"/>
+          <include name="testValidateDeleteNotification"/>
+          <include name="testValidateExpiredbyEndHrsmoreOperHrsYesterdayDate2"/>
+          <include name="BrowserQuit"/>
+          <include name="onTestFailure"/>
+        </methods>
+      </class> <!-- com.doosan.nao.fleetManagements.test.TestFleetManagement -->
+    </classes>
+  </test> <!-- Test Class TestFleetManagement(failed) -->
+  <test thread-count="5" name="Test Class AdminAddNew Comment(failed)">
+    <parameter name="custNo" value="1225672"/>
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="custNo2" value="1225589"/>
+    <parameter name="iotPassword1" value="Welcome@8"/>
+    <parameter name="userName" value="rajkumars"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="iotUSer1" value="p.mahendran@doosan.com"/>
+    <parameter name="password" value="Welcome2"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="brand" value="Bobcat"/>
+    <parameter name="testCaseIDs" value="1377143,1377144,1377145,1377146,1377147,1377148,1377149,1377150,1377151,1377152,1377153,1377154"/>
+    <classes>
+      <class name="com.doosan.nao.fleetManagements.test.TestAddcommentDifferentDealers">
+        <methods>
+          <include name="testNewCommentaddedinAnotherDealer"/>
+          <include name="testValidateTotalComments"/>
+          <include name="testclickFleetManagementLink1725"/>
+          <include name="testValidateAddNewComments"/>
+          <include name="testclickFleetManagementLink1489"/>
+          <include name="setUpForLoginTest"/>
+          <include name="BrowserQuit"/>
+          <include name="testVrifyAddcommentLinkfor1725"/>
+          <include name="onTestFailure"/>
+        </methods>
+      </class> <!-- com.doosan.nao.fleetManagements.test.TestAddcommentDifferentDealers -->
+    </classes>
+  </test> <!-- Test Class AdminAddNew Comment(failed) -->
+  <test thread-count="5" name="Test Class ServiceTab(failed)">
+    <parameter name="custNo" value="1225672"/>
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="iotPassword1" value="Welcome@8"/>
+    <parameter name="userName" value="rajkumars"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="iotUSer1" value="p.mahendran@doosan.com"/>
+    <parameter name="password" value="Welcome2"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="brand" value="Bobcat"/>
+    <parameter name="testCaseIDs" value="1377143,1377144,1377145,1377146,1377147,1377148,1377149,1377150,1377151,1377152,1377153,1377154"/>
+    <classes>
+      <class name="com.doosan.nao.fleetManagements.test.ServiceTabTest">
+        <methods>
+          <include name="testVerifyDescriptionCol"/>
+          <include name="testValidateIOTToFMEquipmentServiesLogDetails"/>
+          <include name="testServiceTableHeader"/>
+          <include name="testValidatefleetManagementLink"/>
+          <include name="testValidateNoneValueProperties"/>
+          <include name="BrowserQuit"/>
+          <include name="testTableDataValuesInMoreLinkPopup"/>
+          <include name="testTableHeadersTextVerifyInMoreLinkPopup"/>
+          <include name="testSericeLogTabisAvailable"/>
+          <include name="testVerifyTableHeadersTextGetingInMoreLinkPopup"/>
+          <include name="testMoreLinksClicking"/>
+          <include name="onTestFailure"/>
+          <include name="validateSetupProperrtiesValuesIOTPortal"/>
+          <include name="testServiceLogTableData"/>
+          <include name="testValidateEquipmetsIOTtoFMPortal"/>
+          <include name="setUpForLoginTest"/>
+          <include name="testTableDataHeaderValuesInMoreLinkPopup"/>
+          <include name="testVerifytheDropdownValuesIsdisabled"/>
+          <include name="testServiceTableDatainfo"/>
+          <include name="testValideDeletePropertyValueInPassportalPortal"/>
+          <include name="testServiceLogTableHeaders"/>
+          <include name="validatePropertyValueSetupOrnot"/>
+          <include name="testServiceTabAvailable"/>
+          <include name="testValidateIOTToFMEquipmentDetails"/>
+          <include name="testValidateEquipmentsInGrid"/>
+          <include name="testValideDeletePropertyValueInIOTPortal"/>
+          <include name="testValidateFleetmanagementTabs"/>
+        </methods>
+      </class> <!-- com.doosan.nao.fleetManagements.test.ServiceTabTest -->
+    </classes>
+  </test> <!-- Test Class ServiceTab(failed) -->
+  <test thread-count="5" name="Test Class CodeTab(failed)">
+    <parameter name="custNo" value="1225672"/>
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="iotPassword1" value="Welcome@8"/>
+    <parameter name="userName" value="rajkumars"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="iotUSer1" value="p.mahendran@doosan.com"/>
+    <parameter name="password" value="Welcome2"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="brand" value="Bobcat"/>
+    <parameter name="testCaseIDs" value="1377143,1377144,1377145,1377146,1377147,1377148,1377149,1377150,1377151,1377152,1377153,1377154"/>
+    <classes>
+      <class name="com.doosan.nao.fleetManagements.test.FaultCodesTest">
+        <methods>
+          <include name="testfiledsCodeDetailsSection"/>
+          <include name="testControllerDropDownAvailability"/>
+          <include name="onTestFailure"/>
+          <include name="testControllerEachDropDownOptonAvailability"/>
+          <include name="testSeverityEachDropDownOptonAvailability"/>
+          <include name="testSeverityDropDownAvailability"/>
+          <include name="setUpForLoginTest"/>
+          <include name="testCodeTabAvailable"/>
+          <include name="testValidateFleetmanagementTabs"/>
+          <include name="BrowserQuit"/>
+          <include name="testValidateEquipmentsInGrid"/>
+          <include name="testValidatefleetManagementLink"/>
+        </methods>
+      </class> <!-- com.doosan.nao.fleetManagements.test.FaultCodesTest -->
+    </classes>
+  </test> <!-- Test Class CodeTab(failed) -->
+  <test thread-count="5" name="Test Class Settings tab(failed)">
+    <parameter name="custNo" value="1225672"/>
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="iotPassword1" value="Welcome@8"/>
+    <parameter name="userName" value="rajkumars"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="PassPortUSerName" value="rajkumar"/>
+    <parameter name="password" value="Welcome2"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="brand" value="Bobcat"/>
+    <parameter name="testCaseIDs" value="1377143,1377144,1377145,1377146,1377147,1377148,1377149,1377150,1377151,1377152,1377153,1377154"/>
+    <classes>
+      <class name="com.doosan.nao.fleetManagements.test.SettingTabTest">
+        <methods>
+          <include name="onTestFailure"/>
+          <include name="BrowserQuit"/>
+          <include name="testValidatefleetManagementSettingsAndHMC"/>
+          <include name="setUpForLoginTest"/>
+        </methods>
+      </class> <!-- com.doosan.nao.fleetManagements.test.SettingTabTest -->
+    </classes>
+  </test> <!-- Test Class Settings tab(failed) -->
+  <test thread-count="5" name="Test LanguageSupportToUserTest(failed)">
+    <parameter name="custNo" value="1225672"/>
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="userName" value="rajkumars"/>
+    <parameter name="locale" value="fr,de"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="PassPortUSerName" value="rajkumar"/>
+    <parameter name="password" value="Welcome1"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="brand" value="Bobcat"/>
+    <parameter name="testCaseIDs" value="1377143,1377144,1377145,1377146,1377147,1377148,1377149,1377150,1377151,1377152,1377153,1377154"/>
+    <classes>
+      <class name="com.doosan.nao.fleetManagements.test.LanguageSupportToUserTest">
+        <methods>
+          <include name="onTestFailure"/>
+          <include name="BrowserQuit"/>
+          <include name="setUpForLoginTest"/>
+          <include name="testLanguageSupportToUserTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.doosan.nao.fleetManagements.test.LanguageSupportToUserTest -->
+    </classes>
+  </test> <!-- Test LanguageSupportToUserTest(failed) -->
+  <test thread-count="5" name="Test DeviceDiagnosticsTabTest(failed)">
+    <parameter name="custNo" value="1225672"/>
+    <parameter name="iotPassword" value="Welcome@3"/>
+    <parameter name="iotPassword1" value="Welcome@8"/>
+    <parameter name="userName" value="rajkumars"/>
+    <parameter name="version" value="30.0"/>
+    <parameter name="platform" value="Windows"/>
+    <parameter name="PassPortUSerName" value="rajkumar"/>
+    <parameter name="password" value="Welcome1"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="iotUSer" value="rajkumar.s1@doosan.com"/>
+    <parameter name="brand" value="Bobcat"/>
+    <parameter name="testCaseIDs" value="1377143,1377144,1377145,1377146,1377147,1377148,1377149,1377150,1377151,1377152,1377153,1377154"/>
+    <classes>
+      <class name="com.doosan.nao.fleetManagements.test.DeviceDiagnosticsTabTest">
+        <methods>
+          <include name="BrowserQuit"/>
+          <include name="onTestFailure"/>
+          <include name="ValidateFTMgmtDeviceDiagnostics"/>
+          <include name="setUpForLoginTest"/>
+          <include name="validateInvalidEquipmentResults"/>
+        </methods>
+      </class> <!-- com.doosan.nao.fleetManagements.test.DeviceDiagnosticsTabTest -->
+    </classes>
+  </test> <!-- Test DeviceDiagnosticsTabTest(failed) -->
+</suite> <!-- Failed suite [Hybris Fleet management Automation Regression Test] -->

@@ -1,0 +1,8 @@
+2019-06-27 16:55:41,472 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed
+2019-07-01 15:17:51,272 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdVerifyEmptyTableAddCart
+2019-07-01 15:17:51,279 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdVerifyEmptyTableAddCart
+2019-07-01 15:17:52,346 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdVerifyEmptyTableAddCart
+2019-07-01 15:17:52,463 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdVerifyEmptyTableAddCart
+2019-07-01 15:17:52,556 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdVerifyEmptyTableAddCart
+2019-07-01 15:17:52,556 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdVerifyEmptyTableAddCart
+2019-07-01 15:19:39,435 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdVerifyEmptyTableAddCart~chrome:passed

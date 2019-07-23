@@ -1,0 +1,105 @@
+package com.doosan.nao.fleetManagements.page;
+
+import java.io.IOException;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.Assert;
+
+public class PlanMaintenancePage {
+	
+	@FindBy(xpath="//input[@ng-click='$ctrl.editPlannedMaintenance($ctrl.machine.key, $ctrl.plannedMaintenance)']")
+	WebElement planmagementEditICON;
+	public void checkplanMainTenanceEditIcon(){
+		boolean flag;
+		try {
+		flag=planmagementEditICON.isDisplayed();
+		Assert.assertEquals(flag, true);
+		} catch (Exception e) {
+			System.out.println(" Planmaintenace not dipaying");
+		}
+		
+	}
+
+	public void clickPlanMainTenanceEditIcon(EventFiringWebDriver wd){
+		try {
+			highlightMyElement(planmagementEditICON, 3, wd);
+			planmagementEditICON.click();
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			
+		}
+	}
+	@FindBy(how=How.ID,using="fleetmanagementApp")
+	public WebElement frameId;
+	@FindBy(id="pmEndDate")
+	WebElement PMENDdate;
+	public void clickPlanMaintenanceENDDate(EventFiringWebDriver wd){
+		JavascriptExecutor jse = (JavascriptExecutor) wd;
+		wd.switchTo().defaultContent();
+		jse.executeScript("scroll(0,-250);", "");
+		//jse.executeScript("scroll(0,450);", "");
+		   // WebElement element = wd.findElement(By.linkText("Google.com.ph"));
+		wd.switchTo().frame(frameId);
+		PMENDdate.clear();
+		PMENDdate.sendKeys("1-Nov-2017",Keys.ENTER);
+		
+	}
+	@FindBy(id="pmEndHours")
+	WebElement PMEndHours;
+	public void enterPMEndHours(){
+		//pmEndHours
+	}
+	
+	@FindBy(id="pmComments")
+	WebElement PMComments;
+	public void enterPMComments(){
+		//PMComments
+	}
+	@FindBy(xpath="//button[@ng-click='$ctrl.onSave()']")
+	WebElement savePmpopup;
+	public void clickSaveOnPMPopup(){
+		savePmpopup.click();
+	}
+	@FindBy(xpath="//button[@ng-click='$ctrl.close()']")
+	WebElement cancelPmpopup;
+	public void clickCancelOnPMPopup(){
+		//cancelPmpopup
+	}
+	@FindBy(xpath="//span[text()='PM End Date']/following::td[1]")
+	WebElement getdateText;
+	public void getDateafterUpdate(){
+		//cancelPmpopup
+		
+		String afterUpdateDate=getdateText.getText();
+		System.out.println("After updated date "+afterUpdateDate);
+	}
+	@FindBy(xpath="//span[text()='PM Status']/following::td[1]")
+	WebElement getPMstatusText;
+	public void getPMStatusfterUpdate(){
+		//cancelPmpopup
+		
+		String afterUpdateStatus=getPMstatusText.getText();
+		System.out.println("After updated PMStatus "+afterUpdateStatus);
+	}
+	
+	public  void highlightMyElement(WebElement element, int waitSeconds, EventFiringWebDriver webdriver)
+			throws IOException {
+		for (int i = 0; i < waitSeconds; i++) {
+			JavascriptExecutor js = (JavascriptExecutor) webdriver;
+			js.executeScript(
+					"arguments[0].setAttribute('style', arguments[1]);",
+					element, "color: red; border: 5px solid red;");
+			js.executeScript(
+					"arguments[0].setAttribute('style', arguments[1]);",
+					element, "");
+
+		}
+
+	}
+		
+}

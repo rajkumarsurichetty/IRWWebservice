@@ -1,0 +1,7 @@
+2019-06-27 16:19:33,360 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdValidateAddCartTwoError
+2019-06-27 16:19:33,361 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdValidateAddCartTwoError
+2019-06-27 16:19:34,065 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdValidateAddCartTwoError
+2019-06-27 16:19:34,182 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdValidateAddCartTwoError
+2019-06-27 16:19:34,235 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdValidateAddCartTwoError
+2019-06-27 16:19:34,237 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdValidateAddCartTwoError
+2019-06-27 16:21:52,357 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdValidateAddCartTwoError~chrome:passed

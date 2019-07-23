@@ -1,0 +1,8 @@
+2019-06-17 15:21:26,025 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrderPageUIElementsTest~chrome:passed
+2019-06-17 15:24:53,321 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrderPageUIElementsTest
+2019-06-17 15:24:53,322 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrderPageUIElementsTest
+2019-06-17 15:24:54,035 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrderPageUIElementsTest
+2019-06-17 15:24:54,182 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrderPageUIElementsTest
+2019-06-17 15:24:54,211 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrderPageUIElementsTest
+2019-06-17 15:24:54,212 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrderPageUIElementsTest
+2019-06-17 15:27:25,763 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrderPageUIElementsTest~chrome:passed

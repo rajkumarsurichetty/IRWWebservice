@@ -1,0 +1,20 @@
+2019-06-17 15:09:35,713 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrderPageUIElementsTest~chrome:passed
+2019-06-17 15:14:19,389 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrderPageUIElementsTest
+2019-06-17 15:14:19,391 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrderPageUIElementsTest
+2019-06-17 15:14:19,968 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrderPageUIElementsTest
+2019-06-17 15:14:20,081 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrderPageUIElementsTest
+2019-06-17 15:14:20,107 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrderPageUIElementsTest
+2019-06-17 15:14:20,108 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrderPageUIElementsTest
+2019-06-17 15:14:40,172 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrderPageUIElementsTest
+2019-06-17 15:14:40,173 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrderPageUIElementsTest
+2019-06-17 15:14:40,770 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrderPageUIElementsTest
+2019-06-17 15:14:40,884 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrderPageUIElementsTest
+2019-06-17 15:14:40,911 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrderPageUIElementsTest
+2019-06-17 15:14:40,911 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrderPageUIElementsTest
+2019-06-17 15:18:07,072 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrderPageUIElementsTest
+2019-06-17 15:18:07,073 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrderPageUIElementsTest
+2019-06-17 15:18:07,653 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrderPageUIElementsTest
+2019-06-17 15:18:07,765 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrderPageUIElementsTest
+2019-06-17 15:18:07,796 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrderPageUIElementsTest
+2019-06-17 15:18:07,796 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrderPageUIElementsTest
+2019-06-17 15:19:26,523 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrderPageUIElementsTest~chrome:passed

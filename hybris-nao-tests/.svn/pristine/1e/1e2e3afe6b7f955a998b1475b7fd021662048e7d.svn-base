@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true" parallel="tests"  name="Firefox for classzero"  thread-count="5">
+				
+		
+<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.classOrderTest.ClassZeroOrderValidator For fireFox" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.classOrderTest.ClassZeroOrderValidator" />
+		</classes>
+		</test> <!-- Default test -->
+
+												
+
+<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.accountHistoryTest.COrderHistryTabValidator For fireFox" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.accountHistoryTest.OrderHistryTabValidator" />
+		</classes>
+		</test> <!-- Default test -->
+	
+												
+
+<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.accountHistoryTest.ShipmentsTabValidator For fireFox" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.accountHistoryTest.ShipmentsTabValidator" />
+		</classes>
+		</test> <!-- Default test -->	
+
+
+<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.cartTest.DeleterCartValidator For fireFox" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.cartTest.DeleterCartValidator" />
+		</classes>
+		</test> <!-- Default test -->	
+				
+				
+<test group-by-instances="true" preserve-order="true" name="com.doosan.nao.cartTest.SavedCartValidator For fireFox" >
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<classes>
+			<class name="com.doosan.nao.cartTest.SavedCartValidator" />
+		</classes>
+		</test> <!-- Default test -->	
+				
+																
+</suite> <!-- Default suite -->

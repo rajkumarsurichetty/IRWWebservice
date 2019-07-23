@@ -1,0 +1,38 @@
+2019-07-04 18:32:18,922 INFO  [com.doosan.nao.reports.ReportGenerator] testValidateFleetmanagementTabs~chrome:passed
+2019-07-11 16:17:50,945 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::BatchOrderUploadTest
+2019-07-11 16:17:50,946 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::BatchOrderUploadTest
+2019-07-11 16:17:52,247 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::BatchOrderUploadTest
+2019-07-11 16:17:52,364 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromSingleInputTestData initated::BatchOrderUploadTest
+2019-07-11 16:17:52,473 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromSingleInputTestData completed::BatchOrderUploadTest
+2019-07-11 16:17:52,475 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::BatchOrderUploadTest
+2019-07-11 16:24:37,095 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::BatchOrderUploadTest
+2019-07-11 16:24:37,095 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::BatchOrderUploadTest
+2019-07-11 16:24:37,751 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::BatchOrderUploadTest
+2019-07-11 16:24:37,867 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::BatchOrderUploadTest
+2019-07-11 16:24:37,867 INFO  [com.doosan.nao.reports.ReportGenerator] 
+2019-07-11 16:24:37,867 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::BatchOrderUploadTest
+2019-07-11 16:31:26,527 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::BatchOrderUploadTest
+2019-07-11 16:31:26,527 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::BatchOrderUploadTest
+2019-07-11 16:31:27,201 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::BatchOrderUploadTest
+2019-07-11 16:31:27,315 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::BatchOrderUploadTest
+2019-07-11 16:31:27,456 INFO  [com.doosan.nao.reports.ReportGenerator] 
+2019-07-11 16:31:27,457 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::BatchOrderUploadTest
+2019-07-11 16:32:36,109 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::QuickOrdInvTextAddLineBox
+2019-07-11 16:32:36,110 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::QuickOrdInvTextAddLineBox
+2019-07-11 16:32:36,786 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::QuickOrdInvTextAddLineBox
+2019-07-11 16:32:36,917 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::QuickOrdInvTextAddLineBox
+2019-07-11 16:32:36,965 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::QuickOrdInvTextAddLineBox
+2019-07-11 16:32:36,966 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::QuickOrdInvTextAddLineBox
+2019-07-11 16:34:20,426 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::BatchOrderUploadTest
+2019-07-11 16:34:20,428 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::BatchOrderUploadTest
+2019-07-11 16:34:21,106 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::BatchOrderUploadTest
+2019-07-11 16:34:21,236 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::BatchOrderUploadTest
+2019-07-11 16:34:21,300 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::BatchOrderUploadTest
+2019-07-11 16:34:21,301 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::BatchOrderUploadTest
+2019-07-11 16:36:11,508 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::BatchOrderUploadTest
+2019-07-11 16:36:11,509 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::BatchOrderUploadTest
+2019-07-11 16:36:12,190 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::BatchOrderUploadTest
+2019-07-11 16:36:12,314 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::BatchOrderUploadTest
+2019-07-11 16:36:12,372 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::BatchOrderUploadTest
+2019-07-11 16:36:12,374 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::BatchOrderUploadTest
+2019-07-11 16:37:50,374 INFO  [com.doosan.nao.reports.ReportGenerator] QuickOrdInvTextAddLineBox~chrome:passed

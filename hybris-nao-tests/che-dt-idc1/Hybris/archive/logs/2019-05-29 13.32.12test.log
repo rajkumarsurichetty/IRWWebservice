@@ -1,0 +1,14 @@
+2019-05-23 19:21:15,189 INFO  [com.doosan.nao.reports.ReportGenerator] SelectOrgPageUITest~chrome:passed
+2019-05-29 13:20:46,627 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::ShoppingCartDuplicateLine
+2019-05-29 13:20:46,627 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::ShoppingCartDuplicateLine
+2019-05-29 13:20:47,644 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::ShoppingCartDuplicateLine
+2019-05-29 13:20:47,744 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::ShoppingCartDuplicateLine
+2019-05-29 13:20:47,782 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::ShoppingCartDuplicateLine
+2019-05-29 13:20:47,782 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::ShoppingCartDuplicateLine
+2019-05-29 13:26:22,814 INFO  [com.doosan.nao.reports.ReportGenerator] getDataFromXLS initiated::ShoppingCartDuplicateLine
+2019-05-29 13:26:22,815 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeVerification initited::ShoppingCartDuplicateLine
+2019-05-29 13:26:23,578 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch initated::ShoppingCartDuplicateLine
+2019-05-29 13:26:23,693 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData initated::ShoppingCartDuplicateLine
+2019-05-29 13:26:23,713 INFO  [com.doosan.nao.reports.ReportGenerator] getInputFromMultiInputTestData completed::ShoppingCartDuplicateLine
+2019-05-29 13:26:23,713 INFO  [com.doosan.nao.reports.ReportGenerator] RunModeDataSearch completed::ShoppingCartDuplicateLine
+2019-05-29 13:32:12,409 INFO  [com.doosan.nao.reports.ReportGenerator] ShoppingCartDuplicateLine~chrome:failed

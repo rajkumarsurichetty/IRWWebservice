@@ -1,0 +1,486 @@
+package com.doosan.nao.fleetManagements.test;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.doosan.nao.constants.Constants;
+import com.doosan.nao.fleetManagements.page.AdminTabCodeTabsPages;
+import com.doosan.nao.fleetManagements.page.FleetManagementEquipmentPage;
+import com.doosan.nao.fleetManagements.page.HomePage;
+import com.doosan.nao.fleetManagements.page.IOTPortalHomePage;
+import com.doosan.nao.fleetManagements.page.IOTPortalLoginPage;
+import com.doosan.nao.fleetManagements.page.LoginPage;
+import com.doosan.nao.fleetManagements.page.PlanMaintenancePage;
+import com.doosan.nao.fleetManagements.page.SelectOrgPage;
+import com.doosan.nao.fleetManagements.page.ServiceTabPage;
+import com.doosan.nao.init.TestInitializer;
+import com.doosan.nao.init.WebdriverSelector;
+import com.doosan.nao.reports.ReportGenerator;
+
+public class ServiceTabTest extends TestInitializer{
+
+	private static String browserName;
+	private String isBrowserAlive = "N";
+	public EventFiringWebDriver wd = null;
+	public String methodName;
+	public String localTestData;
+	String IOTRetailThreshold;
+	String PortalEditTheshold;
+	String portalRetailThreshold;
+	List <String > PortalEquipments;
+	List<String>AssignMachines;
+	Map<String, String>portalDetail;
+	Map<String, String>iotEquipmentDetails;
+	String passportEquipment;
+	
+	LoginPage loginpage;//=PageFactory.initElements(wd, LoginPage.class);
+	SelectOrgPage selectOrgPage;//=PageFactory.initElements(wd, SelectOrgPage.class);
+	HomePage homePage;//=PageFactory.initElements(wd, HomePage.class);
+	FleetManagementEquipmentPage fleetManagementPage;//=PageFactory.initElements(wd, FleetManagementEquipmentPage.class);
+	IOTPortalHomePage iotHomepage;
+	IOTPortalLoginPage iotLoginPage;
+	AdminTabCodeTabsPages adminCodeAddcomments;
+	PlanMaintenancePage planmaintenance;
+	ServiceTabPage serviceTab;
+	@Parameters(value = { "browser", "version", "platform", "osVersion","userName","password","brand","custNo" })
+	@BeforeTest
+	public void setUpForLoginTest(String browser,
+			String browserVersion, String platform, String osVersion,String userName ,String password, String brand,String custNo )
+			throws IOException, URISyntaxException, InterruptedException {
+			this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+			System.err.println(browser);
+			browserName = browser;
+			this.localTestData=userName;
+			if (isBrowserAlive == "N") {
+			wd = WebdriverSelector.getDriver(wd, browser);
+			initialize(browser, browserVersion, platform, osVersion);
+			wd.get(PROJECT.getProperty("DoosanParts5URL"));
+			loginpage=PageFactory.initElements(wd, LoginPage.class);
+			loginpage.toLoginPassport(userName, password);
+			selectOrgPage=PageFactory.initElements(wd, SelectOrgPage.class);
+			homePage=PageFactory.initElements(wd, HomePage.class);
+			fleetManagementPage=PageFactory.initElements(wd, FleetManagementEquipmentPage.class);
+			adminCodeAddcomments=PageFactory.initElements(wd, AdminTabCodeTabsPages.class);
+			planmaintenance=PageFactory.initElements(wd, PlanMaintenancePage.class);
+			iotLoginPage=PageFactory.initElements(wd, IOTPortalLoginPage.class);
+			iotHomepage=PageFactory.initElements(wd,IOTPortalHomePage.class);
+			serviceTab=PageFactory.initElements(wd, ServiceTabPage.class);
+			
+			selectOrgPage.searchByFirstDropdown("Brand");
+			selectOrgPage.searchByContainingOptionDropdown(brand.trim());
+			selectOrgPage.enterCustomerNo(wd,custNo.trim());
+			selectOrgPage.clickSearchButton(wd);
+			selectOrgPage.clickFirstOrgLink(wd);
+			try {
+				TestFleetManagement.waitforpagetoload(wd);
+			} catch (Exception e) {			}
+			
+		}
+	
+	}
+	@Test(priority=1)
+	public void testValidatefleetManagementLink(){
+		
+			this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+			System.err.println(" ****************** Validate Fleet Managemnet Link ******************");
+			homePage.clickFleetManagementHeaderLink(wd);
+			fleetManagementPage.verfyFleetManagementHeaderText(wd);
+			
+			
+	}
+	/**
+	 * @throws InterruptedException
+	 */
+	@Test(priority=2)
+	public void testValidateFleetmanagementTabs() throws InterruptedException
+	{this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate FM Tabs ******************");
+		fleetManagementPage.frameID(wd);
+		fleetManagementPage.clickManageNotificationTab(wd);
+		fleetManagementPage.clickManageGeofenceTab(wd);
+		fleetManagementPage.clickSettingTab(wd);
+		fleetManagementPage.clickEquipmentListTab(wd);
+		try{
+		Thread.sleep(2000);
+		
+		}catch (Exception e)	{		}
+	}
+	
+	@Test(priority=3)
+	public void testValidateEquipmentsInGrid() 
+	{
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Equipment Grid ******************");
+			fleetManagementPage.selectResultsPerAge(wd);
+			fleetManagementPage.showTotalEquipments();
+			PortalEquipments=fleetManagementPage.getTableEquipment(wd);
+			System.out.println();
+			System.out.println(" ****************** All Equipments in Grid ******************");
+			System.out.println(PortalEquipments);
+			passportEquipment=fleetManagementPage.getEquipmentNumber(wd);
+			fleetManagementPage.clickEquipmentLink(wd);
+			
+			fleetManagementPage.verifyDetailsText();
+			
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				 
+				e.printStackTrace();
+			}
+			
+		}
+	@Test(priority=4)
+	public void testServiceTabAvailable(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service Tab availability ******************");
+		serviceTab.checkServiceTabAvailability(wd);
+		serviceTab.clickServiceTab(wd);
+		
+		}
+	@Test(priority=5)
+	public void testServiceTableHeader(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service table headers ******************");
+		serviceTab.checkServiceTableHeader(wd);
+		serviceTab.getServiceHeaders();
+			}
+	
+	@Test(priority=6)
+	public void testServiceTableDatainfo(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service table Data info ******************");
+		serviceTab.getServiceplanDataInfo();
+		
+			}
+	
+	@Test(priority=7)
+	public void testMoreLinksClicking(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service tab more link clicking******************");
+		serviceTab.checkMoreinfoLink();
+		serviceTab.checkmoreLinkclickable(wd);
+		serviceTab.checkheaderOfMorelinkPopup(wd);
+	}
+	
+	@Test(priority=8)
+	public void testVerifyDescriptionCol(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service table header info and description in table column ******************");
+		serviceTab.getHeaderTextOfDescriptionCol();
+		serviceTab.clickCloseButtonInMorePopup(wd);
+		serviceTab.getDescriptionColinTable(wd);
+		serviceTab.checkDescriptions();
+	}
+	@Test(priority=9)
+	public void testVerifyTableHeadersTextGetingInMoreLinkPopup(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates getting  Service table More link popup of Header text of table ******************");
+		serviceTab.checkmoreLinkclickable(wd);
+		serviceTab.gettableText1ofAllInMorePopup();
+		serviceTab.gettableText2ofAllInMorePopup();
+		serviceTab.gettableText3ofAllInMorePopup();
+	}
+	@Test(priority=10)
+	public void testTableHeadersTextVerifyInMoreLinkPopup(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service table More link popup of Header text of table is display ******************");
+		serviceTab.checktableText1ofAllInMorePopup();
+		serviceTab.checktableText2ofAllInMorePopup();
+		serviceTab.checktableText3ofAllInMorePopup();
+		//serviceTab.clickCloseButtonInMorePopup(wd);
+	}
+	@Test(priority=11)
+	public void testTableDataHeaderValuesInMoreLinkPopup(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service table Data Header value in More link popup  ******************");
+		serviceTab.getTableDataValuesOfServiceKitHeader();
+		serviceTab.getTableDataValuesOfServicePartsHeader();
+		serviceTab.getTableDataValuesOfServiceFluidsHeader();
+		//serviceTab.clickCloseButtonInMorePopup(wd);
+	}
+	@Test(priority=12)
+	public void testTableDataValuesInMoreLinkPopup(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service table Data value in More link popup  ******************");
+		serviceTab.getTableDataValuesOfServiceKit();
+		serviceTab.getTableDataValuesOfServiceParts();
+		serviceTab.getTableDataValuesOfServiceFluids();
+		serviceTab.clickCloseButtonInMorePopup(wd);
+	}
+	@Test(priority=13)
+	public void testSericeLogTabisAvailable(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service log Tab is Available or not  ******************");
+		serviceTab.checkServiceLogTabIsavailable(wd);
+		serviceTab.clickServiceLogTab(wd);
+		serviceTab.checkServiceLogtabClikble(wd);
+	}
+	@Test(priority=14)
+	public void testServiceLogTableHeaders(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service log Tab Header  ******************");
+		serviceTab.checkDisplayServicelogTableHeaders();
+	}
+	public Map<String , String> serviceLogInfo;
+	public List<String>noNNuneList;
+	public List<String>NuneList;
+	@Test(priority=15)
+	public void testServiceLogTableData(){
+		serviceLogInfo=new  HashMap<String, String>();
+		noNNuneList=new ArrayList<String>();
+		NuneList=new ArrayList<String>();
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service log Tab Table Data ******************");
+		serviceLogInfo=serviceTab.getserviceLogTableData();
+		System.out.println(" Map Service Log => "+serviceLogInfo);
+		noNNuneList=serviceTab.returnListNoNNoneList();
+		System.out.println("List of Non Nune list => "+noNNuneList);
+		NuneList=serviceTab.returnListNoneList();
+		System.out.println(" List of None List => "+NuneList);
+		serviceTab.getAllDropdownvaluesofSoftwareHistory();
+		serviceTab.getallIsdisabled();
+	}
+	@Test(priority=16)
+	public void testVerifytheDropdownValuesIsdisabled(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validates Service log Tab soft ware History Disabled ******************");
+		serviceTab.checkServiceNoneListAndIsDisabledList();
+	}
+	
+	
+	@Parameters(value = { "browser", "version", "platform", "osVersion","iotUSer","iotPassword"})
+	@Test(priority=17)
+	public void testValidateEquipmetsIOTtoFMPortal(String browser,
+			String browserVersion, String platform, String osVersion,String IOTUser,String IOTPassword){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate IOT Equipmets to Portal Total Equipments ****************** ");
+		
+		wd.get(PROJECT.getProperty("IOTPortalURL"));
+		iotLoginPage.EnterUserName(wd,IOTUser);
+		iotLoginPage.enterPassword(IOTPassword);
+		iotLoginPage.clickLoginButton();
+		iotHomepage.clickSettingICON(wd);
+		iotHomepage.clickSettingICONSwitch();
+		//iotHomepage.clickOrganizationSwitch(wd);
+		iotHomepage.selectEnvironment(wd);
+		iotHomepage.clickThings(wd);
+		iotHomepage.clickHereForMoreOrg(wd);
+		iotHomepage.clickOrganizationLik(wd);
+		iotHomepage.clickActiveEquipments(wd);
+		iotHomepage.selectDealer(wd);
+		iotHomepage.clickThingsTableTab(wd);
+		List<String>IOTequipment =iotHomepage.getIOTEquipmentsTable(wd);
+		System.out.println("Equipmets are");
+		System.out.println(IOTequipment);
+		System.out.println(IOTequipment.containsAll(PortalEquipments));
+		//Assert.assertEquals(IOTequipment.containsAll(PortalEquipments), true);
+	}
+	@Test(priority=18)
+	public void testValidateIOTToFMEquipmentDetails(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate IOT Equipment Details ****************** ");
+		iotHomepage.clickEyeView(wd,passportEquipment);
+		iotEquipmentDetails =iotHomepage.getTableViewEyeDetails();
+		System.out.println("IOT Equipmets details are");
+		for (Map.Entry<String, String> entry : iotEquipmentDetails.entrySet()) {
+		    System.out.println("Property => " + entry.getKey() + " = " + entry.getValue());
+		}
+		iotHomepage.clickAttributeTab(wd);
+	}
+	List<String>serviesLogControllercol;
+	@Test(priority=19)
+	public void testValidateIOTToFMEquipmentServiesLogDetails(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		serviesLogControllercol=new ArrayList<String>();
+		System.err.println(" ****************** Validate IOT Equipment Service Log Details To Fleet Management ****************** ");
+		serviesLogControllercol=serviceTab.returnListOFControllerCol();
+		iotHomepage.getServiecLogData(wd, serviesLogControllercol);
+	}
+	List<String>iotPortalNoneVal;
+	@Test(priority=20)
+	
+	public void testValidateNoneValueProperties(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate IOT Equipment Service Log None value To IOT Portal Propertie None values ****************** ");
+		iotPortalNoneVal=new ArrayList<String>();
+		iotPortalNoneVal=iotHomepage.checkNonevaluesList();
+		
+		System.out.println("portal none val properties"+NuneList);
+		System.out.println("IOT portal none val properties"+iotPortalNoneVal);
+		//Assert.assertEquals(NuneList.containsAll(iotPortalNoneVal), true);
+	}//https://bobcat-hybris-ec5.qa.dice-tools.com/naostorefront/en/fleetmanagement  https://portal-dev.telit.com/things/view/577c21ccb2157c71e5d5145b/attributes
+	String getNonSelectedRandomVal;
+	@Test(priority=21)
+	public void testValideDeletePropertyValueInIOTPortal(){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate in IOT Delete Non None property values ****************** ");
+		iotHomepage.checkDeletePropertiesValueFromIOT(wd);
+		iotHomepage.checkPropertyValueDeleted(wd);
+		getNonSelectedRandomVal=iotHomepage.getSelectedPropertyRandomly();
+		
+	}
+	public List<String>noNNuneList1;
+	public List<String>NoneList1;
+	public Map<String , String> serviceLogInfo1;
+	@Test(priority=22)
+	@Parameters(value = { "browser", "version", "platform", "osVersion","userName","password","brand","custNo" })
+	public void testValideDeletePropertyValueInPassportalPortal(String browser,
+			String browserVersion, String platform, String osVersion,String userName ,String password, String brand,String custNo){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate in Pass portal Delete Non None property values ****************** ");
+		wd.get("https://bobcat-hybris-ec5.qa.dice-tools.com/naostorefront/en/fleetmanagement");
+		//iotHomepage.navigatesToHyBbPortal(wd, "https://bobcat-hybris-ec5.qa.dice-tools.com/naostorefront/en/fleetmanagement");
+		
+		//fleetManagementPage.selectResultsPerAge(wd);
+		//passportEquipment=fleetManagementPage.getEquipmentNumber(wd);
+		/*try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			
+		}
+		fleetManagementPage.clickEquipmentLink(wd);
+		try {
+			Thread.sleep(8000);
+		} catch (InterruptedException e) {
+			
+		}
+		serviceTab.clickServiceLogTab(wd);*/
+		try {
+			setUpForLoginTest(browser, browserVersion, platform, osVersion, userName, password, brand, custNo);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		testValidatefleetManagementLink();
+		try {
+			testValidateFleetmanagementTabs();
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		testValidateEquipmentsInGrid() ;
+		testSericeLogTabisAvailable();
+		noNNuneList1=new ArrayList<String>();
+		NoneList1=new ArrayList<String>();
+		serviceLogInfo1=new  HashMap<String, String>();
+		serviceLogInfo1=serviceTab.getserviceLogTableData();
+		System.out.println(" Map Service Log info After Delete from IOT  => "+serviceLogInfo1);
+		noNNuneList1=serviceTab.returnListNoNNoneList();
+		System.out.println("List of Non Nune list => "+noNNuneList1);
+		NoneList1=serviceTab.returnListNoneList();
+		System.out.println(" List of None List => "+NoneList1);
+		boolean flag = false;
+		for (String string : NoneList1) {
+			if(string.equals(getNonSelectedRandomVal)){
+				flag=true;
+			}
+		}
+	//	boolean flag=NoneList1.contains(getNonSelectedRandomVal);
+		Assert.assertEquals(flag, true);
+	}
+	String getPropertyValAfterSet;
+	@Test(priority=23)@Parameters(value = { "browser", "version", "platform", "osVersion","iotUSer","iotPassword"})
+	public void validateSetupProperrtiesValuesIOTPortal(String browser,
+			String browserVersion, String platform, String osVersion,String IOTUser,String IOTPassword){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate Property Value setup in IOT Portal ****************** ");
+	testValidateEquipmetsIOTtoFMPortal(browser,browserVersion,platform,osVersion,IOTUser,IOTPassword);
+	testValidateIOTToFMEquipmentDetails();
+	iotHomepage.checkSetPropertyValue(NoneList1,wd);
+	iotHomepage.enetrattributeValue();
+	iotHomepage.clickSetAtrributeButton();
+	getPropertyValAfterSet=iotHomepage.getPropertyValueAfterSetup(wd);
+	}
+	public List<String> serviceLogVersionls;
+	public List<String>noNNuneListAfterset;
+	public List<String>NoneListAfterSet;
+	public Map<String , String> serviceLogInfoAfterSet;
+	@Parameters(value = { "browser", "version", "platform", "osVersion","userName","password","brand","custNo" })
+	@Test(priority=24)
+	public void validatePropertyValueSetupOrnot(String browser,
+			String browserVersion, String platform, String osVersion,String userName ,String password, String brand,String custNo){
+		this.methodName= new Object(){}.getClass().getEnclosingMethod().getName();
+		System.err.println(" ****************** Validate fleet managemnt Property Value after setup in IOT  Portal ****************** ");
+		wd.get("https://bobcat-hybris-ec5.qa.dice-tools.com/naostorefront/en/fleetmanagement");
+		
+		try {
+			setUpForLoginTest(browser, browserVersion, platform, osVersion, userName, password, brand, custNo);
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		testValidatefleetManagementLink();
+		try {
+			testValidateFleetmanagementTabs();
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		testValidateEquipmentsInGrid() ;
+		testSericeLogTabisAvailable();
+		noNNuneListAfterset=new ArrayList<String>();
+		NoneListAfterSet=new ArrayList<String>();
+		serviceLogInfoAfterSet=new  HashMap<String, String>();
+		serviceLogVersionls=new ArrayList<String>();
+		serviceLogInfoAfterSet=serviceTab.getserviceLogTableData();
+		System.out.println(" Map Service Log info After setup from IOT  => "+serviceLogInfoAfterSet);
+		noNNuneListAfterset=serviceTab.returnListNoNNoneList();
+		System.out.println("List of Non Nune list => "+noNNuneListAfterset);
+		NoneListAfterSet=serviceTab.returnListNoneList();
+		System.out.println(" List of None List => "+NoneListAfterSet);
+		serviceLogVersionls=serviceTab.returnListServiceLogVersionList();
+		boolean flag = false;
+		for (String string : serviceLogVersionls) {
+			if(string.equals(getPropertyValAfterSet)){
+				flag=true;
+			}
+		}
+		//boolean flag=serviceLogVersionls.contains(getPropertyValAfterSet);
+		Assert.assertEquals(flag, false);
+		
+	}
+	
+	@AfterMethod()
+	public void onTestFailure(ITestResult result) throws IOException
+	{
+		if (result.isSuccess())
+		{
+			isBrowserAlive="A";
+			ReportGenerator.setLogAndCreateScreenshot(methodName+"~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.PASSED, wd);
+			isBrowserAlive="N";
+			//wd.close();	
+		} else 
+		{
+			ReportGenerator.setLogAndCreateScreenshot(methodName+"~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.FAILED,result.getThrowable().toString(),wd);
+			System.out.println(result.getThrowable());
+			isBrowserAlive="N";
+			//wd.quit();
+		}
+	}
+}

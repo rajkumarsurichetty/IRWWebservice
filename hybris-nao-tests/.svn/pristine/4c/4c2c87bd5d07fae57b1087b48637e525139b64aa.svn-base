@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true"  name="Demo2" >
+		
+<suite-files>
+    <suite-file path="ClassOneOrder.xml" />
+</suite-files>		
+
+<suite-files>
+    <suite-file path="ClassTwoOrder.xml" />
+</suite-files>		
+
+<suite-files>
+    <suite-file path="ClassThreeOrder.xml" />
+</suite-files>		
+
+<suite-files>
+    <suite-file path="ClassFourOrder.xml" />
+</suite-files>		
+
+<suite-files>
+    <suite-file path="Class48Order.xml" />
+
+</suite-files>		
+
+
+
+<suite-files>
+    <suite-file path="ClassZeroOrderChrome.xml" />
+
+</suite-files>		
+
+
+<suite-files>
+    <suite-file path="ClassZeroOrderFirefox.xml" />
+
+</suite-files>		
+
+
+
+</suite> <!-- Default suite -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="7" name="Failed suite [Test suite]" parallel="tests">
+  <parameter name="platform" value="Windows"/>
+  <parameter name="osVersion" value="7"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="30.0"/>
+  <test name="com.doosan.nao.classOrderTest.ClassTwoOrderValidator for firefox1(failed)" parallel="tests">
+    <parameter name="platform" value="Windows"/>
+    <parameter name="osVersion" value="7"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="30.0"/>
+    <classes>
+      <class name="com.doosan.nao.classOrderTest.ClassTwoOrderValidator">
+        <methods>
+          <include name="setUpForClassTwoOrderValidatorTest"/>
+          <include name="ValidateClassTwoOrderValidatorTest" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.doosan.nao.classOrderTest.ClassTwoOrderValidator -->
+    </classes>
+  </test> <!-- com.doosan.nao.classOrderTest.ClassTwoOrderValidator for firefox1(failed) -->
+</suite> <!-- Failed suite [Test suite] -->

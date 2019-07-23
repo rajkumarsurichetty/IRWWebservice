@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true"
+	name="Load Test and performance Test">
+	<test group-by-instances="true" preserve-order="true"
+		name="Test Class ServiceTab">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<parameter name="userName" value="rajkumars" />
+		<parameter name="password" value="Welcome1" />
+		<parameter name="brand" value="Bobcat" />
+		<parameter name="custNo" value="1225672" />
+		<parameter name="PassPortUSerName" value="rajkumar"></parameter>
+		<parameter name="iotPassword1" value="Welcome@8"></parameter>
+		<parameter name="iotUSer" value="rajkumar.s1@doosan.com"></parameter>
+		<parameter name="iotPassword" value="Welcome@3"></parameter>
+		<classes>
+			 <class name="com.doosan.nao.fleetManagements.test.SettingTabTest"/>
+
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
