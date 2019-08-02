@@ -380,5 +380,69 @@ public class YourShoppingCartPage {
 		checkAll.click();
 		remove_all_section_top.click();
 	}
+	
+	
+	@FindBy(xpath="//input[contains(@name,'.partNumber')]/preceding-sibling::div/span")
+	WebElement itemElem;
+	String shopItem;
+	public void getItemfromShoppingGrid() {
+		shopItem=itemElem.getText();
+	}
+	@FindBy(xpath="//input[contains(@name,'].quantity')]")
+	WebElement itemQtyElem;
+	String shopQtyItem;
+	public void getItemQtyfromShoppingGrid() {
+		shopQtyItem=itemQtyElem.getAttribute("value");
+	}
+	@FindBy(xpath="//input[contains(@name,'].binLocation')]")
+	WebElement itemBinElem;
+	String shopBinItem;
+	public void getItemBinfromShoppingGrid() {
+		shopBinItem=itemBinElem.getAttribute("value");
+	}
+	@FindBy(xpath="//textarea[contains(@name,'].comments')]")
+	WebElement itemCommElem;
+	String shopCommItem;
+	public void getItemCommfromShoppingGrid() {
+		shopCommItem=itemCommElem.getText();
+	}
+	public void verifyShoppingCartItem(String item){
+		try {
+			Assert.assertEquals(shopItem, item);
+		} catch (Exception e) {
+			Assert.fail(" Item Number Not Match");
+			e.printStackTrace();
+		}
+		
+	}
+
+	public void verifyShoppingCartItemQty(String itemQty) {
+		try {
+			Assert.assertEquals(shopQtyItem, itemQty);
+		} catch (Exception e) {
+			Assert.fail("Quantity Not Match");
+			e.printStackTrace();
+		}
+	}
+
+	public void verifyShoppingCartItemBin(String itemBin) {
+		try {
+			Assert.assertEquals(shopBinItem, itemBin);
+		} catch (Exception e) {
+			Assert.fail("Bin Location Not match");
+			e.printStackTrace();
+		}
+	}
+
+	public void verifyShoppingCartItemComments(String itemComm) {
+		try {
+			Assert.assertEquals(shopCommItem, itemComm);
+		} catch (Exception e) {
+			Assert.fail("Comments Not Match");
+			e.printStackTrace();
+		}
+	}
+
+	
 }
 

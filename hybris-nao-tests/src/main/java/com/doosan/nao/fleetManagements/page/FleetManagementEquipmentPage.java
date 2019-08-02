@@ -237,12 +237,22 @@ public class FleetManagementEquipmentPage extends TestInitializer{
 	public WebElement orderStaus;
 
 	/**
-	 * This method for selecting the Order Satatus
+	 * This method for selecting the Order Invetory Satatus
 	 */
-	public void filterEquipmentBySelectOrderStatus() {
-		selectByVisibleText(orderStaus, "RETAILED");
+	String optionSelec;
+	public void filterEquipmentBySelectInvetoryStatus() {
+		List<String>listOpt=new ArrayList<>();
+		Random rand = new Random(); 
+		listOpt=getSelectOptionFromDropDown(orderStaus);
+		optionSelec=listOpt.get(rand.nextInt(listOpt.size()));
+		selectByVisibleText(orderStaus, optionSelec);
 	}
 
+	public void verifyEquipmentsInvetoryStatusGrid() {
+		//optionSelec
+		
+		
+	}
 	@FindBy(how = How.XPATH, using = "(//select[@st-search='serviceStatus'])[2]")
 	public WebElement serviceStatus;
 

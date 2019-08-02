@@ -44,10 +44,11 @@ public class QuickOrderPage {
 		this.itemNumber.clear();
 		this.itemNumber.sendKeys(itemNumber);
 	}
-	
-	public void verifyItemNumisEntered(String ItemNo) {
-		String itNo=itemNumber.getAttribute("value");
+	String itNo;
+	public String verifyItemNumisEntered(String ItemNo) {
+		itNo=itemNumber.getAttribute("value");
 		Assert.assertEquals(itNo.trim(), ItemNo.trim());
+		return itNo;
 	}
 	String itemNoMultiple;
 	public WebElement itemNumberMultiple;
@@ -259,10 +260,11 @@ public class QuickOrderPage {
 			e.printStackTrace();
 		}
 	}
-	
-	public void verifyQuantityisEntered(String qty) {
-		String qtyEnter=quantity.getAttribute("value");
+	String qtyEnter;
+	public String verifyQuantityisEntered(String qty) {
+		qtyEnter=quantity.getAttribute("value");
 		Assert.assertEquals(qtyEnter.trim(), qty.trim());
+		return qtyEnter;
 	}
 	@FindBy(how=How.XPATH,using=".//*[@id='quickOrderTable']/tbody/tr[1]/td[5]/input")
 	public WebElement binLocation;
@@ -272,10 +274,11 @@ public class QuickOrderPage {
 		this.binLocation.sendKeys(binLocation);
 	}
 	
-	
-	public void verifyBiLocationIsEntered(String binlocation) {
-		String binEnter=binLocation.getAttribute("value");
+	String binEnter;
+	public String verifyBiLocationIsEntered(String binlocation) {
+		binEnter=binLocation.getAttribute("value");
 		Assert.assertEquals(binEnter.trim(), binlocation.trim());
+		return binEnter;
 	}
 	public void isCommentTextBoxDisplay(EventFiringWebDriver wd) {
 		TestInitializer.highlightMyElement(comments, 3, wd);
@@ -293,9 +296,11 @@ public class QuickOrderPage {
 		this.comments.clear();
 		this.comments.sendKeys(comments);
 	}
-	public void verifyCommentsIsEntered(String comment) {
-		String commEnter=comments.getAttribute("value");
+	String commEnter;
+	public String verifyCommentsIsEntered(String comment) {
+		commEnter=comments.getAttribute("value");
 		Assert.assertEquals(commEnter.trim(), comment.trim());
+		return commEnter;
 	}
 	
 	public void isAddToCartDisplay(EventFiringWebDriver wd) {
