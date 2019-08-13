@@ -16,6 +16,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.doosan.nao.init.TestInitializer;
+
 public class YourShoppingCartPage {
 
 	
@@ -373,10 +375,11 @@ public class YourShoppingCartPage {
 	
 	@FindBy(id="checkAll")
 	WebElement checkAll;
-	@FindBy(id="remove_all_section_top")
+	@FindBy(xpath="//div[@id='remove_all_section_top']/a")
 	WebElement remove_all_section_top;
 	
-	public void clickRemoveCart() {
+	public void clickRemoveCart(EventFiringWebDriver wd) {
+		TestInitializer.scrollIntoViewElement(wd, checkAll);
 		checkAll.click();
 		remove_all_section_top.click();
 	}
@@ -385,7 +388,8 @@ public class YourShoppingCartPage {
 	@FindBy(xpath="//input[contains(@name,'.partNumber')]/preceding-sibling::div/span")
 	WebElement itemElem;
 	String shopItem;
-	public void getItemfromShoppingGrid() {
+	public void getItemfromShoppingGrid(EventFiringWebDriver wd) {
+		TestInitializer.waitForElement(wd, itemElem);
 		shopItem=itemElem.getText();
 	}
 	@FindBy(xpath="//input[contains(@name,'].quantity')]")
@@ -443,6 +447,25 @@ public class YourShoppingCartPage {
 		}
 	}
 
+	
+	//***********************Click Cleared all Shopping cart lines************************/
+	@FindBy(xpath="//div[@id='basketitems']/a/span")
+	WebElement shoppingCartItemTotal;
+	public String getTotalItemLineInShoppingCart() {
+		String tot=shoppingCartItemTotal.getText();
+		return tot;
+	}
+	
+	public void verifyShoppingCartItemClearing(EventFiringWebDriver wd) {
+		TestInitializer.waitForElement(wd, shoppingCartItemTotal);
+		String tot=getTotalItemLineInShoppingCart();
+		if(!tot.equals("0")) {
+			shoppingCartItemTotal.click();
+			TestInitializer.waitForElement(wd, itemQtyElem);
+			clickRemoveCart(wd);
+		}
+			
+		}
 	
 }
 
