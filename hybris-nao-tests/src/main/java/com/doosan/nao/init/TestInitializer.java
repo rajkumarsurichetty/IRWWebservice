@@ -424,6 +424,9 @@ public class TestInitializer {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		
 	}
+	public static void scrollIntoViewElement(EventFiringWebDriver wd,WebElement element) {
+		((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", element);
+	}
 
 /**
 	 * This for Updating Status in TEstRail

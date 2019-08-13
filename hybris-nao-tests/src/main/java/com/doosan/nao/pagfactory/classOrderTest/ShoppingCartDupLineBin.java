@@ -158,7 +158,7 @@ public class ShoppingCartDupLineBin extends TestInitializer{
 			consolidateQuantity	=	quickOrderPage.checkDuplicatedLineItemsNoBinLocation(wd, itemNo, qty, binLocation);
 				
 				yourShoppingCartPage.getLineItemAndQuantity(wd, consolidateQuantity, "");
-				yourShoppingCartPage.clickRemoveCart();
+				yourShoppingCartPage.clickRemoveCart(wd);
 				
 	}
 

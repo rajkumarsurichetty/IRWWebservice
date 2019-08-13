@@ -100,17 +100,17 @@ public class ShoppingCartUITest extends TestInitializer {
 		quickOrderPage.enterQuantity(qty);
 		quickOrderPage.enterBinLocation(binLocation);
 		quickOrderPage.enterComments(comments);
-		String itNoQ=quickOrderPage.verifyItemNumisEntered(itemNum);
+		/*String itNoQ=quickOrderPage.verifyItemNumisEntered(itemNum);
 		String qtyQ=quickOrderPage.verifyQuantityisEntered(qty);
 		String binQ=quickOrderPage.verifyBiLocationIsEntered(binLocation);
 		String CommQ=quickOrderPage.verifyCommentsIsEntered(comments);
 		quickOrderPage.clickaddToCart(wd);
-		yourShoppingCartPage.getItemfromShoppingGrid();
+		yourShoppingCartPage.getItemfromShoppingGrid(wd);
 		yourShoppingCartPage.verifyShoppingCartItem(itNoQ);
 		yourShoppingCartPage.verifyShoppingCartItemQty(qtyQ);
 		yourShoppingCartPage.verifyShoppingCartItemBin(binQ);
 		yourShoppingCartPage.verifyShoppingCartItemComments(CommQ);
-		
+		*/
 				
 	}
 		
