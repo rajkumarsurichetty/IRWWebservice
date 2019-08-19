@@ -1,5 +1,8 @@
 package com.doosan.nao.PageFactory;
 
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -16,10 +19,34 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.doosan.nao.constants.Constants;
 import com.doosan.nao.init.TestInitializer;
+import com.doosan.nao.reports.ReportGenerator;
 
 public class YourShoppingCartPage {
 
+	@FindBy(xpath="//h1")
+	public WebElement headerShoppingCartText;
+	public void checkShoppingCartHeader(EventFiringWebDriver wd,String testRunId,String testCaseNumberID,String browserName,String localTestData) {
+		String headerShoppCartText=headerShoppingCartText.getText();
+		try {
+			String path=ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.PASSED, wd);
+			TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "verifyHomeLink_BreadcrumbIsDisplay~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+			Assert.assertEquals(headerShoppCartText.contains("Your Shopping Cart"), true);
+		} catch (Exception e) {
+			String path = null;
+			try {
+				path = ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.FAILED, wd);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "HomeLink_BreadcrumbIs not Display~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+			
+			e.printStackTrace();
+		}
+			
+	}
 	
 	@FindBy(how=How.XPATH,using="html/body/div[2]/div[4]/div[2]/div[2]/form/div[1]/select")
 	public WebElement selectOrderClass;
@@ -447,6 +474,13 @@ public class YourShoppingCartPage {
 		}
 	}
 
+	/**************************Check UI Shopping cart **********************************?/
+	 * 
+	 * 
+	 */
+	public void checkShoppingCartUI() {
+		
+	}
 	
 	//***********************Click Cleared all Shopping cart lines************************/
 	@FindBy(xpath="//div[@id='basketitems']/a/span")
@@ -456,6 +490,10 @@ public class YourShoppingCartPage {
 		return tot;
 	}
 	
+	/**
+	 * Theis method for Clearing Shopping cart items in grid
+	 * @param wd
+	 */
 	public void verifyShoppingCartItemClearing(EventFiringWebDriver wd) {
 		TestInitializer.waitForElement(wd, shoppingCartItemTotal);
 		String tot=getTotalItemLineInShoppingCart();
@@ -467,5 +505,118 @@ public class YourShoppingCartPage {
 			
 		}
 	
+	
+	/**************************Promotion section */
+	
+	
+	
+	@FindBy(id="promotions")
+	WebElement promotionsSection;
+	boolean promoFlag;
+	/**
+	 * Method for promotions is display
+	 * @return
+	 */
+	public boolean checkPromotionSectionIsDisplay() {
+		if(promotionsSection.isDisplayed()) {
+			promoFlag=true;
+		}
+		return promoFlag;
+	}
+public void verifyPromotionSectionIsDisplay(EventFiringWebDriver wd,String testRunId,String testCaseNumberID,String browserName,String localTestData) {
+	boolean f=checkPromotionSectionIsDisplay();
+	try {
+		String path=ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.PASSED, wd);
+		TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "Qucik order page UI elements Test~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+		Assert.assertEquals(f, true);
+	} catch (Exception e) {
+		String path = null;
+		try {
+			path = ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.FAILED, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "Qucik order page UI elements Test~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+		
+		e.printStackTrace();
+	}
+	
 }
 
+
+@FindBy(id="cartsummary")
+WebElement cartSummarySection;
+boolean cartsummaryFlag;
+/**
+ * Method for Shopping is display
+ * @return
+ */
+public boolean checkCartSummarySectionIsDisplay() {
+	if(cartSummarySection.isDisplayed()) {
+		cartsummaryFlag=true;
+	}
+	return cartsummaryFlag;
+}
+public void verifyCartSummarySectionIsDisplay(EventFiringWebDriver wd,String testRunId,String testCaseNumberID,String browserName,String localTestData) {
+	boolean f=checkPromotionSectionIsDisplay();
+	try {
+		String path=ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.PASSED, wd);
+		TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "CartSummarySectionIsDisplay Test~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+		Assert.assertEquals(f, true);
+	} catch (Exception e) {
+		String path = null;
+		try {
+			path = ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.FAILED, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "CartSummary SectionIs Not Display Test~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+		
+		e.printStackTrace();
+	}
+	
+}
+
+
+//li/a[text()='Home']
+
+@FindBy(id="cartsummary")
+WebElement HomeLinkbreadcrumb;
+boolean HomeLinkbreadcrumb_Flag;
+/**
+ * Method for Homeis display
+ * @return
+ */
+public boolean checkHomeLinkbreadcrumbIsDisplay() {
+	if(HomeLinkbreadcrumb.isDisplayed()) {
+		HomeLinkbreadcrumb_Flag=true;
+	}
+	return HomeLinkbreadcrumb_Flag;
+}
+	
+
+
+public void verifyHomeLink_BreadcrumbIsDisplay(EventFiringWebDriver wd,String testRunId,String testCaseNumberID,String browserName,String localTestData) {
+	boolean f=checkPromotionSectionIsDisplay();
+	try {
+		String path=ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.PASSED, wd);
+		TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "verifyHomeLink_BreadcrumbIsDisplay~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+		Assert.assertEquals(f, true);
+	} catch (Exception e) {
+		String path = null;
+		try {
+			path = ReportGenerator.setLogAndCreateScreenshot("ShoppingCartUITest~"+browserName, Constants.DEFAULT_TESTNAME, localTestData, Constants.FAILED, wd);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		TestInitializer.addResultForTestCase(testRunId,testCaseNumberID,1, "HomeLink_BreadcrumbIs not Display~ "+browserName+"__"+localTestData+"_"+Constants.PASSED+"\n"+"![](http://che-dt-idc1/Hybris/reports/Screenshots/"+path+")");
+		
+		e.printStackTrace();
+	}
+	
+}
+
+}

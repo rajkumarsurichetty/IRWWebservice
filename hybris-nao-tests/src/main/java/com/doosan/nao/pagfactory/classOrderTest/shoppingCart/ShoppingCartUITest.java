@@ -8,6 +8,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -31,6 +32,7 @@ public class ShoppingCartUITest extends TestInitializer {
 	public  String testRunId;
 	public String testCaseNumberID;
 	String path;
+	YourShoppingCartPage yourShoppingCartPage;
 	public String [] TCNum=null;
 	@Parameters(value = { "browser", "version", "platform", "osVersion" })
 	@BeforeMethod
@@ -54,7 +56,7 @@ public class ShoppingCartUITest extends TestInitializer {
 	@Test(priority=1,dataProvider="ShoppingCartUITest")
 	public void validateSelectOrgPageTwoDropDownTest(String testData,String userName,String password, String brand, String custNo, String itemNum, String qty, String binLocation, String comments, String testUrlName,String testCaseNumber) throws InterruptedException
 	{	testRunId=PROJECT.getProperty("testRunID");
-		testCaseNumberID=testCaseNumber;
+		//testCaseNumberID=testCaseNumber;
 		System.out.println("1350059");
 		TCNum=testCaseNumber.split(",");
 		for (String tcNum : TCNum) {
@@ -67,7 +69,7 @@ public class ShoppingCartUITest extends TestInitializer {
 		SelectOrgPage selectOrgPage=PageFactory.initElements(wd, SelectOrgPage.class);
 		HomePage homePage=PageFactory.initElements(wd, HomePage.class);
 		QuickOrderPage quickOrderPage=PageFactory.initElements(wd, QuickOrderPage.class);
-		YourShoppingCartPage yourShoppingCartPage=PageFactory.initElements(wd, YourShoppingCartPage.class);
+		 yourShoppingCartPage=PageFactory.initElements(wd, YourShoppingCartPage.class);
 		if(isBrowserAlive=="N")
 		{
 			loginPage.enterUserName(userName.trim());
@@ -100,22 +102,16 @@ public class ShoppingCartUITest extends TestInitializer {
 		quickOrderPage.enterQuantity(qty);
 		quickOrderPage.enterBinLocation(binLocation);
 		quickOrderPage.enterComments(comments);
-		/*String itNoQ=quickOrderPage.verifyItemNumisEntered(itemNum);
-		String qtyQ=quickOrderPage.verifyQuantityisEntered(qty);
-		String binQ=quickOrderPage.verifyBiLocationIsEntered(binLocation);
-		String CommQ=quickOrderPage.verifyCommentsIsEntered(comments);
 		quickOrderPage.clickaddToCart(wd);
-		yourShoppingCartPage.getItemfromShoppingGrid(wd);
-		yourShoppingCartPage.verifyShoppingCartItem(itNoQ);
-		yourShoppingCartPage.verifyShoppingCartItemQty(qtyQ);
-		yourShoppingCartPage.verifyShoppingCartItemBin(binQ);
-		yourShoppingCartPage.verifyShoppingCartItemComments(CommQ);
-		*/
+		//ui 1364913
+		yourShoppingCartPage.checkShoppingCartHeader(wd, testRunId, TCNum[1], browserName, localTestData);
+		yourShoppingCartPage.verifyPromotionSectionIsDisplay(wd, testRunId, TCNum[1], browserName, localTestData);//1364915
+		yourShoppingCartPage.verifyCartSummarySectionIsDisplay(wd, testRunId, TCNum[1], browserName, localTestData);
+		yourShoppingCartPage.verifyHomeLink_BreadcrumbIsDisplay(wd,testRunId, TCNum[2], browserName, localTestData);//1364916
+		
 				
 	}
 		
-
-	
 	@DataProvider(name="ShoppingCartUITest")
 	public static Object[][] getDataForShipments() throws InterruptedException
 	{
@@ -125,7 +121,7 @@ public class ShoppingCartUITest extends TestInitializer {
 	}
 	
 	
-	@AfterMethod()
+	//@AfterMethod()
 	public void onTestFailure(ITestResult result) throws IOException
 	{int i=0;
 		if (result.isSuccess())

@@ -442,8 +442,10 @@ public class TestInitializer {
         //String testRunId = "2266";index.php?/api/v2/close_run/:run_id
 
         APIClient client = new APIClient("https://testrail.prod.corp.doosan.com/testrail/");
-        client.setUser("rajkumars");
-        client.setPassword("Welcome@5");
+      //  client.setUser("rajkumars");
+      // client.setPassword("Welcome@6");
+        client.setUser(PROJECT.getProperty("hmcUSer"));
+       client.setPassword(PROJECT.getProperty("hmcPassword"));
        
         Map data = new HashMap();
         data.put("status_id", status);
