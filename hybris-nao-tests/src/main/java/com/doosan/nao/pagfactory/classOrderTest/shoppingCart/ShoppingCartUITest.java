@@ -54,7 +54,7 @@ public class ShoppingCartUITest extends TestInitializer {
 	
 	
 	@Test(priority=1,dataProvider="ShoppingCartUITest")
-	public void validateSelectOrgPageTwoDropDownTest(String testData,String userName,String password, String brand, String custNo, String itemNum, String qty, String binLocation, String comments, String testUrlName,String testCaseNumber) throws InterruptedException
+	public void validateSelectOrgPageTwoDropDownTest(String testData,String userName,String password, String brand, String custNo, String itemNum, String qty, String binLocation, String comments, String testUrlName,String testCaseNumber,String shopCartUpdtQty,String ShopCartStatus) throws InterruptedException
 	{	testRunId=PROJECT.getProperty("testRunID");
 		//testCaseNumberID=testCaseNumber;
 		System.out.println("1350059");
@@ -96,6 +96,7 @@ public class ShoppingCartUITest extends TestInitializer {
 		selectOrgPage.enterTextSecondContainsBox(custNo);
 		selectOrgPage.clickSearchButton();
 		selectOrgPage.clickFirstOrgLink(wd);
+		yourShoppingCartPage.verifyShoppingCartItemClearing(wd);
 		homePage.clickQuickOrderLink(wd);
 		quickOrderPage.isQuickOrderpageItemTableDisplay(wd);
 		quickOrderPage.enterItemNumer(itemNum);
@@ -104,12 +105,17 @@ public class ShoppingCartUITest extends TestInitializer {
 		quickOrderPage.enterComments(comments);
 		quickOrderPage.clickaddToCart(wd);
 		//ui 1364913
-		yourShoppingCartPage.checkShoppingCartHeader(wd, testRunId, TCNum[1], browserName, localTestData);
+		yourShoppingCartPage.checkShoppingCartHeader(wd, testRunId, TCNum[0], browserName, localTestData);
 		yourShoppingCartPage.verifyPromotionSectionIsDisplay(wd, testRunId, TCNum[1], browserName, localTestData);//1364915
 		yourShoppingCartPage.verifyCartSummarySectionIsDisplay(wd, testRunId, TCNum[1], browserName, localTestData);
 		yourShoppingCartPage.verifyHomeLink_BreadcrumbIsDisplay(wd,testRunId, TCNum[2], browserName, localTestData);//1364916
+		yourShoppingCartPage.checkShoppingCartGridHeader(wd,testRunId, TCNum[3], browserName, localTestData);
+		yourShoppingCartPage.clickExportExcelButton(wd,"shoppingCart");
+		yourShoppingCartPage.verifyExcelIsDownLoaded(wd, testRunId, TCNum[4], browserName, localTestData, "shoppingCart");
+			/**************************************/
 		
-				
+		yourShoppingCartPage.enterVerifyShoppingQantity(wd, testRunId, TCNum[5], browserName, localTestData, shopCartUpdtQty);
+		yourShoppingCartPage.verifyRefreshAvailability(wd, testRunId, TCNum[5], browserName, localTestData, ShopCartStatus,brand);
 	}
 		
 	@DataProvider(name="ShoppingCartUITest")

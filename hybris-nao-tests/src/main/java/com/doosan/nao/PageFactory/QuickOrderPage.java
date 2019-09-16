@@ -177,6 +177,16 @@ public class QuickOrderPage {
 			Assert.assertEquals(message, "You are not contracted to purchase this item.", "item not valid");
 		}
 		}
+	@FindBy(how=How.XPATH,using="//div[@class='error-message']/p")
+	public WebElement errorMessage;
+	public void VerifyiteErrorMessage()
+	{ 
+		// verify the error message web element
+		String message=this.errorMessage.getText();
+		if (message.equals("Please enter at least one line")){
+			Assert.assertEquals(message, "Please enter at least one line", "item not entered");
+		}
+		}
 	
 	public void getTwoErrorItemNum() {
 		String message=this.VerifyitemNumberentries0.getText();
@@ -602,6 +612,7 @@ try {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		if ((addLineNumbers.matches("[0-9]+") && addLineNumbers.length() > 2)) {
 		if(!(Integer.parseInt(addLineNumbers)>=600)) {
 		((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", eleAddLineTextErrorLine);
 		//Assert.assertEquals(errorHeader.getText().trim(), "Sorry, there were problems submitting this request");
@@ -610,7 +621,11 @@ try {
 			((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", eleAddLineTextbox);
 			Assert.assertEquals(wd.findElement(By.xpath("//div[@class='error-message']/p")).getText().trim(), "Donot enter more than 600 lines");
 		}
-		
+		}else {
+			((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", eleAddLineTextErrorLine);
+			//Assert.assertEquals(errorHeader.getText().trim(), "Sorry, there were problems submitting this request");
+			Assert.assertEquals(eleAddLineTextErrorLine.getText().trim(), "Please enter data in valid format");
+		}
 	}
 	@FindBy(xpath="//table[@id='quickOrderTable']/tbody/tr")
 	List<WebElement>itemlinerows;

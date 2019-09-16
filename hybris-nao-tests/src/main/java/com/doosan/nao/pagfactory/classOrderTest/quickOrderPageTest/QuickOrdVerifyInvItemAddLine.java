@@ -104,7 +104,7 @@ public class QuickOrdVerifyInvItemAddLine extends TestInitializer{
 		quickOrderPage.verifyBiLocationIsEntered(binLocation);
 		quickOrderPage.verifyCommentsIsEntered(comments);
 		quickOrderPage.clickAddMoreLines();
-		quickOrderPage.VerifyitemNumberentries0();
+		quickOrderPage.VerifyiteErrorMessage();
 		
 		/*quickOrderPage.isItemNumTextBoxDisplay(wd);
 		quickOrderPage.isQuantityTextBoxDisplay(wd);
