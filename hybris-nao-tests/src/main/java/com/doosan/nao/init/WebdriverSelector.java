@@ -1,10 +1,13 @@
 package com.doosan.nao.init;
 
 import java.net.MalformedURLException;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -67,8 +70,8 @@ public class WebdriverSelector {
 			
 		} else if (browser.equals("chrome"))
 		{
-		
-			DesiredCapabilities caps = new DesiredCapabilities();
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\BrowserSetUp\\chromedriver.exe");
+			DesiredCapabilities caps = new DesiredCapabilities().chrome();
 			caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 
 			caps.setCapability("browser", "Chrome");
@@ -83,8 +86,29 @@ public class WebdriverSelector {
 
 			//WebDriver driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 			System.setProperty("java.net.preferIPv4Stack", "true");
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\BrowserSetUp\\chromedriver.exe");
-			WebDriver driver=new ChromeDriver();
+			
+			String downloadFilepath = System.getProperty("user.dir")+"\\downloads";	
+			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+			chromePrefs.put("profile.default_content_settings.popups", 0);
+			chromePrefs.put("download.default_directory", downloadFilepath);
+			ChromeOptions options = new ChromeOptions();
+			HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+			options.setExperimentalOption("prefs", chromePrefs);
+			options.addArguments("--test-type");
+			options.addArguments("--disable-popup-blocking");
+			options.addArguments("--disable-pdf-material-ui");		 
+			options.addArguments("test-type", "start-maximized","no-default-browser-check");
+			options.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
+	                  UnexpectedAlertBehaviour.IGNORE);
+			//DesiredCapabilities cap = DesiredCapabilities.chrome();
+			caps.setCapability(ChromeOptions.CAPABILITY, chromeOptionsMap);
+			caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			caps.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			caps.setCapability(ChromeOptions.CAPABILITY, options);	
+			//ChromeOptions cap = new ChromeOptions(); 
+			//cap.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR,
+			                 // UnexpectedAlertBehaviour.IGNORE);
+			WebDriver driver=new ChromeDriver(caps);
 			wd=new EventFiringWebDriver(driver);
 			DriverListener driverListner=new DriverListener();
 			wd.register(driverListner);
