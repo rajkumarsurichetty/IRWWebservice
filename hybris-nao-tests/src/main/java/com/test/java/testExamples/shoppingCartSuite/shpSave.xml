@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite group-by-instances="true" preserve-order="true"
+	name="Hybris AWS and Fleetmanagement automation Test">
+	
+	
+	<test verbose="2" group-by-instances="true" preserve-order="true"
+		name="SelectOrgPageTest" >
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="30.0" />
+		<parameter name="platform" value="Windows" />
+		<parameter name="osVersion" value="7" />
+		<parameter name="testCaseNumber" value="1364921" />
+		<classes>
+			<class name="com.doosan.nao.pagfactory.classOrderTest.shoppingCart.SPSaveToCartTest"/>
+		</classes>
+	</test> <!-- Default test -->
+	
+
+
+
+
+
+</suite> <!-- Default suite -->
+
+
